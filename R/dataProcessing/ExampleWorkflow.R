@@ -229,3 +229,4 @@ ggplot(data = compH2O) +
   geom_abline() +
   labs(title = "H2O Fluxes", y = "Manually Processed Fluxes", x = "Fully Automated Fluxes") +
   theme_bw()
+
