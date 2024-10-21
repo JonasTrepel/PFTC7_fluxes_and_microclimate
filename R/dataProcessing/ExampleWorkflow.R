@@ -230,3 +230,24 @@ ggplot(data = compH2O) +
   labs(title = "H2O Fluxes", y = "Manually Processed Fluxes", x = "Fully Automated Fluxes") +
   theme_bw()
 
+### check if the flagged fluxes overlap 
+
+
+flaggedOld <- fread("data/oldData/licor_nee_flagged.csv") %>% 
+  filter(!flag == "okay") %>% 
+  mutate(file = gsub("raw_data/LI7500/All_sites/", "", filename)) %>% dplyr::select(file) %>% pull()
+
+
+flaggedNew <- co2FluxDT %>% 
+  filter(!fluxFlag == "keep") %>% 
+  mutate(file = gsub("data/rawData/LI7500/LI7500_Site 1/", "", filename), 
+         file = gsub("data/rawData/LI7500/LI7500_Site 2/", "", file), 
+         file = gsub("data/rawData/LI7500/LI7500_Site 3/", "", file), 
+         file = gsub("data/rawData/LI7500/LI7500_Site 4/", "", file), 
+         file = gsub("data/rawData/LI7500/LI7500_Site 5/", "", file)) %>% dplyr::select(file) %>% pull()
+
+ 
+setdiff(flaggedNew, flaggedOld)
+
+setdiff(flaggedOld, flaggedNew)
+

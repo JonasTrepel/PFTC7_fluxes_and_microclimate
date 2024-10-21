@@ -384,7 +384,7 @@ calcTentFluxes <- function(
       mutate(
         segSD = ifelse(is.na(segSD), 0, segSD),  # Replace NA segment SDs with 0
         r2Flag = ifelse(r2 < .75, "Be careful, R2 is suspiciously low", "Looks good!"),  # Flag for R-squared value
-        segFlag = ifelse(segSD > abs(fluxValue/4), "Not good, segments are extremely variable. Suggest to discard", "Looks good!"),  # Flag for segment variability
+        segFlag = ifelse(segSD > abs(fluxValue/2), "Not good, segments are extremely variable. Suggest to discard", "Looks good!"),  # Flag for segment variability
         fluxFlag = ifelse(r2Flag == "Looks good!" & segFlag == "Looks good!" & fluxDirectionFlag == "Looks good!", "keep", "discard")  # Overall flag for flux quality
       )
     tmpRes
