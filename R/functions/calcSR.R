@@ -10,7 +10,6 @@ library(tidyverse)
 ## data (LI8100 flux data )
 ## area
 ## volume
-data = soilResDTRaw
 
 calcSR <- function(data, area = 317.8, volume = 1807.6){
   
