@@ -11,8 +11,6 @@ source("R/functions/readAndAddPAR.R")
 source("R/functions/calcTentFluxes.R")
 source("R/functions/calcSR.R")
 
-
-
 ### reguired packages: 
 
 
@@ -58,7 +56,7 @@ fluxDFRaw <- getFluxDF(files = fluxFiles,
 
 ## Add PAR 
 
-parFiles <- list.files("data/rawData/PAR/", full.names = T)
+parFiles <- list.files("data/rawData/PAR/", pattern = "*.TXT", full.names = T)
 
 fluxDT <- readAndAddPAR(parFiles = parFiles, #default = NULL
                         fluxDF = fluxDFRaw, #default = NULL 
@@ -121,7 +119,7 @@ h2oFluxDT <- calcTentFluxes(
 ##### Get Soil Respiration #####
 
 
-filesSR <- list.files("data/rawData/LI8100", recursive = TRUE, full.names = TRUE)
+filesSR <- list.files("data/rawData/LI8100", pattern = "*.txt", recursive = TRUE, full.names = TRUE)
 
 soilResDTRaw <- getFluxDF(files = filesSR,
                   device = "LI8100", 
@@ -137,7 +135,6 @@ soilWide <- soilResDT %>%
   dplyr::select(-Rsq) %>% 
   pivot_wider(names_from = fluxType, values_from = fluxValue) %>% 
   dplyr::select(-device)
-
 
 co2TentWide <- co2FluxDT %>% 
   filter(fluxFlag == "keep") %>% 
@@ -170,15 +167,18 @@ fluxComb <- soilWide %>%
          CUE = NPP/GPP, #Carbon use efficiency 
          TRANS = ET - DayEvap, # Transpiration
          WUE = NPP/TRANS) #Water use efficiency
-fluxComb
+view(fluxComb)
 
 ### Plot 
 
 fluxCombLong <- fluxComb %>% 
   pivot_longer(cols = c(NEE, DayReco, NightReco, SoilResp, GPP, NPP, ET, DayEvap, NightEvap, TRANS, CUE, WUE),
                names_to = "fluxType", 
-               values_to = "fluxValue")
+               values_to = "fluxValue") |>
+  drop_na(fluxValue)
+
 library(ggridges)
+
 ggplot(data = fluxCombLong) +
   geom_density_ridges(aes(y = as.factor(elevation), x = fluxValue)) +
   facet_wrap(~fluxType, scales = "free")
