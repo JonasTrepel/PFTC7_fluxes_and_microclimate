@@ -168,7 +168,7 @@ view(fluxComb)
 # Plot ----
 
 fluxCombLong <- fluxComb %>% 
-  pivot_longer(cols = c(NEE, DayReco, NightReco, SoilResp, GPP, NPP, ET, DayEvap, NightEvap, TRANS, CUE, WUE),
+  pivot_longer(cols = c(NEE, DayReco, NightReco, SoilResp, SoilEvap, GPP, NPP, ET, DayEvap, NightEvap, TRANS, CUE, WUE),
                names_to = "fluxType", 
                values_to = "fluxValue") |>
   drop_na(fluxValue)
@@ -184,6 +184,7 @@ ggplot(data = fluxCombLong) +
 fwrite(fluxCombLong, "builds/processedFluxes/cleanFluxesAllMetrics.csv")
 fwrite(co2FluxDT, "builds/processedFluxes/co2Fluxes.csv")
 fwrite(h2oFluxDT, "builds/processedFluxes/h2oFluxes.csv")
+fwrite(soilResDT, "builds/processedFluxes/SRFluxes.csv")
 
 # compare with "old" data ----
 
