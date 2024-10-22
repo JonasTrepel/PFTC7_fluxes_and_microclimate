@@ -45,19 +45,17 @@ readAndAddPAR <- function(parFiles = NULL,
   
   
   if(!is.null(parComb)){
-    fluxDF$POSIXct <- as.POSIXct(fluxDF[[fluxDFTimeCol]], 
-                                format="%Y-%m-%d %H:%M:%S", 
+    fluxDF$POSIXct <- ymd_hms(fluxDF[[fluxDFTimeCol]], 
                                 tz = fluxTZ)
-    parComb$POSIXct_uc <- as.POSIXct(paste(parComb$Date, parComb$Time),
-                                 format="%Y-%m-%d %H:%M:%S", 
+    parComb$POSIXct_uc <- ymd_hms(paste(parComb$Date, parComb$Time), 
                                  tz = parTZ)
     commonTZ = fluxTZ
     
     parComb$POSIXct <- with_tz(parComb$POSIXct_uc, tzone = commonTZ)
-    parFluxDTRaw <- inner_join(parComb, fluxDF, by="POSIXct") %>% 
+    parFluxDTRaw <- right_join(parComb, fluxDF, by="POSIXct") %>% 
       rename(PAR = INPUT1) %>% 
       dplyr::select(c(PAR, Filename, DateTime))
-    
+
     print(paste0("Succesfully joined PAR and fluxes, returning fluxDF with PAR column"))
   }
   else{
