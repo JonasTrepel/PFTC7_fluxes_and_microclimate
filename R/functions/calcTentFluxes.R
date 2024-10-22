@@ -38,6 +38,7 @@ require(sarima)
 #'         and other relevant statistics for each unique flux measurement file.
 #'         
 
+flux <- "data/rawData/LI7500/LI7500_Site 5/5_2800_west_3_night_resp.txt"
 
 calcTentFluxes <- function( 
     vol = NA,  # Volume in cubic meters, default is 2.197
@@ -207,6 +208,9 @@ calcTentFluxes <- function(
     cav <- c()            # Stores average CO2 concentrations for each segment
     wav <- c()            # Stores average H2O concentrations for each segment
     lmSlope <- c()
+    
+    r2LinearFitAll <- c()
+    eff_sample_all <- 0
     # Initialize index for storing results and counters for effective sample sizes
     i = 1  
     eff_sample <- 0          # Counter for effective sample size based on linear fit criteria
@@ -270,6 +274,14 @@ calcTentFluxes <- function(
         p_av <- mean(press[s1:s2])  
         w_av <- mean(h2o[s1:s2])  
         
+        
+        
+        ### save R2 for all segments
+        frac_sample_all <- (s2-s1)  # Calculate the fraction of samples in the current segment
+        eff_sample_all <- eff_sample_all + (s2-s1)  # Update the effective sample size for linear fits
+        
+        r2LinearFitAll[i] <- rsq
+        
         # Only consider the segment if the R-squared value meets the threshold (0.6)
         if(rsq > 0.7){  
           frac_sample <- (s2-s1)  # Calculate the fraction of samples in the current segment
@@ -309,6 +321,9 @@ calcTentFluxes <- function(
     avgPressureKPa_avg <- if(eff_sample == 0){mean(press)}else{sum(avgPressureKPa, na.rm = TRUE)/eff_sample}  # Average pressure with handling for no effective samples
     cav_avg <- if(eff_sample == 0){mean(co2)}else{sum(cav, na.rm = TRUE)/eff_sample}  # Average CO2 concentration with handling for no effective samples
     wav_avg <- if(eff_sample == 0){mean(h2o)}else{sum(wav, na.rm = TRUE)/eff_sample}  # Average H2O concentration with handling for no effective samples
+    
+    r2LinearFitAll_avg <- sum(r2LinearFitAll, na.rm = T)/eff_sample_all
+    
     
     if(any(lmSlope > 0, na.rm = T) & any(lmSlope < 0, na.rm = T)) {
       fluxDirectionFlag <- paste0("Weird flux! Both positive and negative segments identified")
@@ -358,7 +373,8 @@ calcTentFluxes <- function(
       fluxMethodJustification = fluxMethodJustification,  # Justification for the method used to calculate flux
       fluxDirectionFlag = fluxDirectionFlag, 
       redo = redo, 
-      dayOrNight = dayOrNight
+      dayOrNight = dayOrNight, 
+      totalRsq = r2LinearFitAll_avg
     ))
     
     # Create a data table to hold the results of the flux calculations
@@ -378,12 +394,14 @@ calcTentFluxes <- function(
       fluxMethodJustification = fluxMethodJustification,  # Justification for the flux calculation method
       fluxDirectionFlag = fluxDirectionFlag,
       redo = redo, 
-      dayOrNight = dayOrNight
+      dayOrNight = dayOrNight, 
+      totalRsq = r2LinearFitAll_avg
+      
     ) %>%
       # Mutate to create additional flags for quality control
       mutate(
         segSD = ifelse(is.na(segSD), 0, segSD),  # Replace NA segment SDs with 0
-        r2Flag = ifelse(r2 < .75, "Be careful, R2 is suspiciously low", "Looks good!"),  # Flag for R-squared value
+        r2Flag = ifelse(r2 < .75 | is.na(r2), "Be careful, R2 is suspiciously low or NA", "Looks good!"),  # Flag for R-squared value
         segFlag = ifelse(segSD > abs(fluxValue/2), "Not good, segments are extremely variable. Suggest to discard", "Looks good!"),  # Flag for segment variability
         fluxFlag = ifelse(r2Flag == "Looks good!" & segFlag == "Looks good!" & fluxDirectionFlag == "Looks good!", "keep", "discard")  # Overall flag for flux quality
       )

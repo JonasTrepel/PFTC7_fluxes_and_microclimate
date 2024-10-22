@@ -74,7 +74,7 @@ co2FluxDT <- calcTentFluxes(
   vol = 2.197, #default 
   area = 1.69, #default 
   sigStrengthThresh = 95.0, #default 
-  parThresh = 0, #default 
+  parThresh = 650, #default 
   fluxDF = fluxDT, #default 
   param = "co2", #default 
   parCol = "PAR", #default 
@@ -93,14 +93,14 @@ co2FluxDT <- calcTentFluxes(
 
 ## inspect CO2 fluxes 
 
-
+co2FluxDT[is.na(co2FluxDT$fluxValue),]$totalRsq
 
 ### calculate H2O fluxes 
 h2oFluxDT <- calcTentFluxes(
   vol = 2.197, #default 
   area = 1.69, #default 
   sigStrengthThresh = 95.0, #default 
-  parThresh = 0, #default 
+  parThresh = 650, #default 
   fluxDF = fluxDT, #default 
   param = "h2o", #default 
   parCol = "PAR", #default 
