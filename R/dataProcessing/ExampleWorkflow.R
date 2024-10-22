@@ -13,14 +13,13 @@ source("R/functions/calcSR.R")
 
 ### reguired packages: 
 
-
 ## path with flux files: 
 path <- "data/rawData/LI7500"
 
 ## this will fix potential weird addons to the file names in the folder directly
 fixFileNames(path = path)
 
-# Read flux files 
+# Read chamber flux files ----
 fluxFiles <- readFluxFiles(path = path,
                            photo = "photo", ## specify the patterns in filenames to categorize fluxes
                            resp = "resp", 
@@ -29,7 +28,7 @@ fluxFiles <- readFluxFiles(path = path,
 
 
 
-## get Flux metadata (South Africa specific unfortunately)
+## get Flux metadata (South Africa specific unfortunately) ----
 
 fluxMeta <- tibble(Filename = unlist(fluxFiles),
                    file = basename(Filename)) %>%
@@ -45,7 +44,7 @@ fluxMeta <- tibble(Filename = unlist(fluxFiles),
 
 fluxMeta
 
-## read fluxes into a dataframe 
+## read chamber fluxes into a dataframe ----
 fluxDFRaw <- getFluxDF(files = fluxFiles,
                   skip = 3, #default
                   device = "LI7500" #default
@@ -54,8 +53,7 @@ fluxDFRaw <- getFluxDF(files = fluxFiles,
   filter(!grepl("not used", Filename)) #remove unused files 
 
 
-## Add PAR 
-
+## Add PAR ----
 parFiles <- list.files("data/rawData/PAR/", pattern = "*.TXT", full.names = T)
 
 fluxDT <- readAndAddPAR(parFiles = parFiles, #default = NULL
@@ -66,7 +64,7 @@ fluxDT <- readAndAddPAR(parFiles = parFiles, #default = NULL
                         parSkip = 7 #default
                         )
 
-## Calculate CO2 fluxes 
+## Calculate CO2 fluxes ----
 
 co2FluxDT <- calcTentFluxes(
   vol = 2.197, #default 
@@ -89,11 +87,11 @@ co2FluxDT <- calcTentFluxes(
   dayNightCol = "day_night"
 )
 
-## inspect CO2 fluxes 
+## inspect CO2 fluxes ----
 
 co2FluxDT[is.na(co2FluxDT$fluxValue),]$totalRsq
 
-### calculate H2O fluxes 
+### calculate H2O fluxes ----
 h2oFluxDT <- calcTentFluxes(
   vol = 2.197, #default 
   area = 1.69, #default 
@@ -116,9 +114,7 @@ h2oFluxDT <- calcTentFluxes(
 )
 
 
-##### Get Soil Respiration #####
-
-
+# Get Soil Respiration #####
 filesSR <- list.files("data/rawData/LI8100", pattern = "*.txt", recursive = TRUE, full.names = TRUE)
 
 soilResDTRaw <- getFluxDF(files = filesSR,
@@ -129,7 +125,7 @@ soilResDT <- calcSR(data = soilResDTRaw,
                     area = 317.8, 
                     volume = 1807.6) 
 
-### combine all data 
+# combine all data ----
 
 soilWide <- soilResDT %>% 
   dplyr::select(-Rsq) %>% 
@@ -169,7 +165,7 @@ fluxComb <- soilWide %>%
          WUE = NPP/TRANS) #Water use efficiency
 view(fluxComb)
 
-### Plot 
+# Plot ----
 
 fluxCombLong <- fluxComb %>% 
   pivot_longer(cols = c(NEE, DayReco, NightReco, SoilResp, GPP, NPP, ET, DayEvap, NightEvap, TRANS, CUE, WUE),
@@ -183,16 +179,13 @@ ggplot(data = fluxCombLong) +
   geom_density_ridges(aes(y = as.factor(elevation), x = fluxValue)) +
   facet_wrap(~fluxType, scales = "free")
 
-
-### Write data
+# Write data ----
 
 fwrite(fluxCombLong, "builds/processedFluxes/cleanFluxesAllMetrics.csv")
 fwrite(co2FluxDT, "builds/processedFluxes/co2Fluxes.csv")
 fwrite(h2oFluxDT, "builds/processedFluxes/h2oFluxes.csv")
 
-
-
-#### compare with "old" data 
+# compare with "old" data ----
 
 #CO2
 co2Man <- fread("data/oldData/licor_nee_flagged.csv") %>%
