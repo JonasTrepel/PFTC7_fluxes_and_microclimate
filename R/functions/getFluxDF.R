@@ -1,3 +1,8 @@
+# install.packages("devtools")
+# devtools::install_github("bgctw/RespChamberProc")
+
+require(RespChamberProc)
+
 getFluxDF <- function(files, skip = 3, device = "LI7500", toi = NULL){  
   # Function to read multiple flux data files and process them into a combined data table.
   # Arguments:
