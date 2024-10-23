@@ -9,6 +9,8 @@ source("R/functions/fixFileNames.R")
 source("R/functions/getFluxDF.R")
 source("R/functions/readAndAddPAR.R")
 source("R/functions/calcTentFluxes.R")
+source("R/functions/checkFluxFlags.R")
+
 source("R/functions/calcSR.R")
 
 
@@ -93,7 +95,32 @@ co2FluxDT <- calcTentFluxes(
 
 ## inspect CO2 fluxes 
 
-co2FluxDT[is.na(co2FluxDT$fluxValue),]$totalRsq
+fluxIDs <-   co2FluxDT %>% 
+  filter(fluxType == "photo" & fluxValue < 0) %>% 
+  dplyr::select(filename) %>% pull()
+
+co2FluxDT <- checkFluxFlags(
+  vol = 2.197, #default 
+  area = 1.69, #default 
+  sigStrengthThresh = 95.0, #default 
+  parThresh = 650, #default 
+  fluxDF = fluxDT, #default 
+  fittedFluxes = co2FluxDT, 
+  fluxIDs = fluxIDs,
+  param = "co2", #default 
+  parCol = "PAR", #default 
+  dateTimeCol = "DateTime", #default 
+  co2Col = "ConcCO2", #default 
+  h2oCol = "ConcH2O", #default 
+  signalStrengthCol = "SignalStrength", #default 
+  tempCol = "AirTemperature", #default 
+  pressureCol = "PressureKPa", #default 
+  fluxTypeCol = "measurement", #default 
+  plotIDCol = "plotID", #default 
+  skip = 7, 
+  redoCol = "redo",
+  dayNightCol = "day_night"
+)
 
 ### calculate H2O fluxes 
 h2oFluxDT <- calcTentFluxes(
