@@ -86,7 +86,7 @@ calcTentFluxes <- function(
     # Subset the flux data frame for the current filename and keep distinct rows
     dtSub <- fluxDF %>% filter(Filename == {{flux}}) %>% unique()#%>% distinct(across(-f_fluxID), .keep_all = TRUE)
     
-    if(nrow(dtSub)< 60+skip){next}  # Skip if n is too small 
+    if(nrow(dtSub) < 60 + skip){next}  # Skip if n is too small 
     
     
     # Get the unique flux type from the subset data
@@ -140,6 +140,15 @@ calcTentFluxes <- function(
     co2 <- as.numeric(dtSub[[co2Col]])  # CO2 concentration
     h2o <- as.numeric(dtSub[[h2oCol]])  # H2O concentration
     
+    # Discard fluxes with a suspiciously high range 
+    if(param == "co2"){
+      if( (max(co2, na.rm = T) - min(co2, na.rm = T)) > 50){next}
+    } else if(param == "h2o"){
+      if( (max(h2o, na.rm = T) - min(h2o, na.rm = T)) > 100){next} ### gotta decide on a better water fluxes threshold 
+    }
+
+    
+    
     # Determine PAR values; if no PAR data is available or if it's a respiration measurement, set PAR to threshold + 1
     if(check_night_resp == TRUE | sum(is.na(dtSub$PAR)) == nrow(dtSub)){ 
       par <- rep(parThresh + 1, nrow(dtSub))  # Default PAR value
@@ -164,8 +173,15 @@ calcTentFluxes <- function(
     changepoints(res)  # Extract change points from the result
     cPrime_seg <- fitted(res)  # Get the fitted values from the change point analysis
     
+    
+    if(param == "co2"){
+      concCol <- co2Col
+    }else if(param == "h20"){
+      concCol <- h2oCol
+      
+    }
     # Create a ggplot for visualizing CO2 concentration over time
-    p2 <- ggplot(data = dtSub, aes(y = .data[[co2Col]],  
+    p2 <- ggplot(data = dtSub, aes(y = .data[[concCol]],  
                                    x = as.numeric(.data[[dateTimeCol]]) - min(as.numeric(.data[[dateTimeCol]])), 
                                    color = as.numeric(.data[[signalStrengthCol]]))) +  
       geom_point() +  # Add points for CO2 data
@@ -181,8 +197,8 @@ calcTentFluxes <- function(
     p1 <- ggplot(data = dtSub,  
                  aes(y = .data[[parCol]],  
                      x = as.numeric(.data[[dateTimeCol]]) - min(as.numeric(.data[[dateTimeCol]])))) +  
-      geom_point(color = "red") +  # Add points for PAR data
-      geom_line(color = "red") +  # Add lines connecting the points
+      geom_point(color = "forestgreen") +  # Add points for PAR data
+      geom_line(color = "forestgreen") +  # Add lines connecting the points
     #  ylim(min(dtSub[[parCol]], na.rm = TRUE), max(dtSub[[parCol]], na.rm = TRUE)) +  # Set y-axis limits for PAR
       ylab("PAR") +  # Label y-axis
       xlab("Time") +  # Label x-axis
@@ -234,6 +250,8 @@ calcTentFluxes <- function(
       # Calculate the mean signal strength and PAR for the current segment
       meanSigStrength <- mean(signalStrength[s1:s2])  
       meanPAR <- mean(par[s1:s2])  
+      sdPAR <- sd(par[s1:s2])
+      cvPAR <- sdPAR/meanPAR
       
       # Select the concentration variable based on the parameter specified
       if ("co2" == param) {  
@@ -250,7 +268,7 @@ calcTentFluxes <- function(
       }
       
       # Proceed only if both signal strength and PAR exceed the respective thresholds
-      if((meanSigStrength > sigStrengthThresh) && (meanPAR > parThresh)){  
+      if((meanSigStrength > sigStrengthThresh) && (meanPAR > parThresh) && (cvPAR < .25)){  
         
         # Fit a linear model to the current segment
         linear.fit <- stats::lm(cwPrime[s1:s2] ~ (time[s1:s2]))  

@@ -38,13 +38,11 @@ checkFluxFlags <- function(
   
   if(is.null(fluxDF)){print("Please provide a dataframe with gas concentrations")}
 
+  fittedFluxes <- fittedFluxes %>% 
+    mutate(methodFlag = "Segmented")
   
   # Loop through each unique flux measurement filename in the flux data frame
-  
-  # flux <- "data/rawData/LI7500/LI7500_Site 4/4_2600_west_1_day_photo.txt" 
-  # flux <- "data/rawData/LI7500/LI7500_Site 4/4_2600_west_3_day_photo.txt"     
-  # flux <- "data/rawData/LI7500/LI7500_Site 5/5_2800_east_2_day_photo.txt"   
-  # flux <- "data/rawData/LI7500/LI7500_Site 5/5_2800_east_3_day_photo.txt"  
+
   
   for(flux in unique(fluxIDs)){
     
@@ -131,8 +129,15 @@ checkFluxFlags <- function(
     changepoints(res)  # Extract change points from the result
     cPrime_seg <- fitted(res)  # Get the fitted values from the change point analysis
     
+    if(param == "co2"){
+      concCol <- co2Col
+    }else if(param == "h20"){
+      concCol <- h2oCol
+      
+    }
+    
     # Create a ggplot for visualizing CO2 concentration over time
-    p2 <- ggplot(data = dtSub, aes(y = .data[[co2Col]],  
+    p2 <- ggplot(data = dtSub, aes(y = .data[[concCol]],  
                                    x = as.numeric(.data[[dateTimeCol]]) - min(as.numeric(.data[[dateTimeCol]])), 
                                    color = as.numeric(.data[[signalStrengthCol]]))) +  
       geom_point() +  # Add points for CO2 data
@@ -148,8 +153,8 @@ checkFluxFlags <- function(
     p1 <- ggplot(data = dtSub,  
                  aes(y = .data[[parCol]],  
                      x = as.numeric(.data[[dateTimeCol]]) - min(as.numeric(.data[[dateTimeCol]])))) +  
-      geom_point(color = "red") +  # Add points for PAR data
-      geom_line(color = "red") +  # Add lines connecting the points
+      geom_point(color = "forestgreen") +  # Add points for PAR data
+      geom_line(color = "forestgreen") +  # Add lines connecting the points
       #  ylim(min(dtSub[[parCol]], na.rm = TRUE), max(dtSub[[parCol]], na.rm = TRUE)) +  # Set y-axis limits for PAR
       ylab("PAR") +  # Label y-axis
       xlab("Time") +  # Label x-axis
@@ -238,20 +243,108 @@ checkFluxFlags <- function(
           geom_line(data = predPlot, aes(x = time, y = pred, alpha = rsq), color = "black", linewidth = 1.1) +
           labs(title = paste0(flux))
         print(p3)
+        pg2 <- plot_grid(p1, p3, ncol=1, align="v", axis=1,   rel_heights = c(1, 2)) 
+        print(pg2)
         
         print(s)  
         i <- i+1  # Increment the index for storing results
       }  
     }
     
-    
-    flagChange <- readline("Do you want to change the flag to 'keep'? Please type 'keep' or 'k': ")
+    print(paste0("Current flag: ", fittedFluxes[filename == flux, ]$fluxFlag))
+    flagChange <- readline("Do you want to keep, discard or refit the flux?
+                           Please type 'keep' or 'k' for keep, 'discard' or 'd' for discard and 'r' or 'refit' to refit: ")
     
     # Check if the input is 'keep' or 'k'
     if (flagChange == "k" || flagChange == "keep") {
       fittedFluxes[filename == flux, ]$fluxFlag <- "keep"
+    }else if (flagChange == "d" || flagChange == "discard") {
+        fittedFluxes[filename == flux, ]$fluxFlag <- "discard"
+    } else if (flagChange == "r" || flagChange == "refit") {
+
+      startTime <- readline("Please select START time (just an integer number, no units): ")
+      endTime <- readline("Please select END time (just an integer number, no units): ")
+      
+      # Fit a linear model to the current segment
+      linear.fit <- stats::lm(cwPrime[startTime:endTime] ~ (time[startTime:endTime]))  
+      
+      lmSlope <- linear.fit$coeff[2]
+      
+      # Extract R-squared value from the linear model
+      rsq <- as.numeric(summary(linear.fit)$r.sq)  
+      
+      pred <- data.frame(time = time[startTime:endTime])
+      pred$pred <- predict(linear.fit)*(1 - (mean(h2o[startTime:endTime]) / 1000))  
+      pred$rsq <- rsq
+      
+      
+      predPlot <- rbind(pred, predPlot)
+      
+      if(param == "co2"){
+        concCol <- co2Col
+      }else if(param == "h20"){
+        concCol <- h2oCol
+        
+       }
+      
+      p3 <- ggplot(data = dtSub, aes(y = .data[[concCol]],  
+                               x = as.numeric(.data[[dateTimeCol]]) - min(as.numeric(.data[[dateTimeCol]])), 
+                               color = as.numeric(.data[[signalStrengthCol]]))) +  
+        geom_point() +  
+        scale_color_gradient(high = "blue", low = "red", limits = c(79, 101)) +  # Color gradient for signal strength
+        geom_line() +  # Add lines connecting the points
+        theme(legend.position = "bottom") +  # Remove legend
+        ylab(paste0(param, " concentration")) +  # Label y-axis
+        xlab("Time") + 
+        geom_line(data = pred, aes(x = time, y = pred, alpha = rsq), color = "black", linewidth = 1.1) +
+        labs(title = paste0(flux))
+      print(p3)
+      
+      pg2 <- plot_grid(p1, p3, ncol=1, align="v", axis=1,   rel_heights = c(1, 2)) 
+      plot(pg2)
+      
+      aicLinearFit <- as.numeric(stats::AIC(linear.fit)) # Store AIC multiplied by sample fraction
+      r2LinearFit <- as.numeric(summary(linear.fit)$r.sq) # Store R-squared multiplied by sample fraction
+      inter <- as.numeric(linear.fit$coeff[1])  # Store intercept from linear fit
+      dcw_dt <- as.numeric(linear.fit$coeff[2])  # Store slope from linear fit
+      avgTemperatureC <- mean(temp[startTime:endTime]) # Store average temperature multiplied by sample fraction
+      avgPressureKPa<- mean(press[startTime:endTime]) # Store average pressure multiplied by sample fraction
+      cav <- mean(co2[startTime:endTime]) # Store average CO2 concentration multiplied by sample fraction
+      wav <- mean(h2o[startTime:endTime]) # Store average H2O concentration multiplied by sample fraction
+      
+      
+      t_av <- mean(temp[startTime:endTime])  
+      p_av <- mean(press[startTime:endTime])  
+      w_av <- mean(h2o[startTime:endTime]) 
+      
+      # Calculate the linear model parameter based on the parameter type
+      if ("co2" == param) {  
+        param_lm <- -(vol * p_av * (1000) * dcw_dt)/(R * area * (t_av + 273.15)) 
+      } else if ("h2o" == param) {  
+        param_lm <- (vol * p_av * (1000) * dcw_dt)/(R * area * (t_av + 273.15)) 
+      }  
+      
+      ### update the respective columns 
+      
+      fittedFluxes[filename == flux, ]$methodFlag <- paste0("manually fitted. start time: ", startTime, ", end time: ", endTime)
+      fittedFluxes[filename == flux, ]$methodFlag <- paste0("manually fitted. start time: ", startTime, ", end time: ", endTime)
+
+      fittedFluxes[filename == flux, ]$fluxValue <- param_lm
+      fittedFluxes[filename == flux, ]$r2 <- r2LinearFit
+      fittedFluxes[filename == flux, ]$totalRsq <- r2LinearFit
+      fittedFluxes[filename == flux, ]$segFlag <- NA
+      fittedFluxes[filename == flux, ]$fluxDirectionFlag <- NA
+      fittedFluxes[filename == flux, ]$avgCO2 <- 
+      fittedFluxes[filename == flux, ]$avgH2O <- 
+      fittedFluxes[filename == flux, ]$avgTemperatureC <- 
+      fittedFluxes[filename == flux, ]$avgPressureKPa <- 
+      fittedFluxes[filename == flux, ]$segSD <- NA
+        
+        
     }
-  
+    
+    
+      
   }
   # Return the combined data table with calculated fluxes
   return(fittedFluxes)  

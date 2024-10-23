@@ -55,7 +55,7 @@ fluxDFRaw <- getFluxDF(files = fluxFiles,
                   device = "LI7500" #default
                   )  %>% 
   left_join(fluxMeta) %>% #join metadata
-  filter(!grepl("not used", Filename)) #remove unused files 
+  filter(!grepl("not used", Filename)) %>% filter(!grepl("old", Filename)) #remove unused files 
 
 
 ## Add PAR 
@@ -93,13 +93,39 @@ co2FluxDT <- calcTentFluxes(
   dayNightCol = "day_night"
 )
 
+
+fluxMetaSmall <- fluxMeta  %>% 
+  rename(filename = Filename) %>% 
+  dplyr::select(filename, elevation, aspect) %>% unique()
+co2FluxDT %>% 
+  left_join(fluxMetaSmall) %>%
+  filter(fluxFlag == "keep") %>% 
+  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
+  ggplot() +
+  geom_boxplot(aes(x = elevation, y = fluxValue, color = aspect)) +
+  geom_jitter(aes(x = elevation, y = fluxValue, color = aspect)) +
+  facet_wrap(~fluxType)
+
+library(tidylog)
+co2FluxDT %>%
+  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
+  group_by(plotID, fluxType) %>% 
+  filter(fluxFlag == "keep") %>% 
+  slice_max(r2) %>% 
+  left_join(fluxMetaSmall) %>%
+  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
+  ggplot() +
+  geom_boxplot(aes(x = elevation, y = fluxValue, color = aspect), outlier.shape = NA) +
+  geom_point(aes(x = elevation, y = fluxValue, color = aspect), size = .75) +
+  facet_wrap(~fluxType)
+
 ## inspect CO2 fluxes 
 
 fluxIDs <-   co2FluxDT %>% 
   filter(fluxType == "photo" & fluxValue < 0) %>% 
   dplyr::select(filename) %>% pull()
 
-co2FluxDT <- checkFluxFlags(
+co2FluxDT.test <- checkFluxFlags(
   vol = 2.197, #default 
   area = 1.69, #default 
   sigStrengthThresh = 95.0, #default 
@@ -122,6 +148,7 @@ co2FluxDT <- checkFluxFlags(
   dayNightCol = "day_night"
 )
 
+table(co2FluxDT.test$methodFlag)
 ### calculate H2O fluxes 
 h2oFluxDT <- calcTentFluxes(
   vol = 2.197, #default 
