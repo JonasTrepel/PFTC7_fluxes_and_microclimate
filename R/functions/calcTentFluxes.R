@@ -144,7 +144,7 @@ calcTentFluxes <- function(
     if(param == "co2"){
       if( (max(co2, na.rm = T) - min(co2, na.rm = T)) > 50){next}
     } else if(param == "h2o"){
-      if( (max(h2o, na.rm = T) - min(h2o, na.rm = T)) > 100){next} ### gotta decide on a better water fluxes threshold 
+      if( (max(h2o, na.rm = T) - min(h2o, na.rm = T)) > 50){next} ### gotta decide on a better water fluxes threshold 
     }
 
     
@@ -168,15 +168,24 @@ calcTentFluxes <- function(
     co2Amb <- mean(as.numeric(as.character(dtAmbient[[co2Col]])) / (1 - (as.numeric(as.character(dtAmbient[[h2oCol]])) / 1000)))  # Ambient CO2 concentration
     h2oAmb <- mean(as.numeric(as.character(dtAmbient[[h2oCol]])) / (1 - (as.numeric(as.character(dtAmbient[[h2oCol]])) / 1000)))  # Ambient H2O concentration
     
+    
+    if ("co2" == param) {  
+      cwPrime <- cPrime  # Use cPrime for CO2
+      tag <- "cPrime"  
+    } else if ("h2o" == param) {  
+      cwPrime <- wPrime  # Use wPrime for H2O
+      tag <- "wPrime"  
+    }
+    
     # Identify change points in the time series of c'
-    res <- suppressMessages(cpop(cPrime, minseglen = 30))  # Identify change points with a minimum segment length of 30 seconds
+    res <- suppressMessages(cpop(cwPrime, minseglen = 30))  # Identify change points with a minimum segment length of 30 seconds
     changepoints(res)  # Extract change points from the result
-    cPrime_seg <- fitted(res)  # Get the fitted values from the change point analysis
+    cwPrime_seg <- fitted(res)  # Get the fitted values from the change point analysis
     
     
     if(param == "co2"){
       concCol <- co2Col
-    }else if(param == "h20"){
+    }else if(param == "h2o"){
       concCol <- h2oCol
       
     }
@@ -189,9 +198,9 @@ calcTentFluxes <- function(
       geom_line() +  # Add lines connecting the points
       theme(legend.position = "none") +  # Remove legend
       #ylim(min(dtSub[[co2Col]], na.rm = TRUE), max(dtSub[[co2Col]], na.rm = TRUE)) +  # Set y-axis limits for CO2
-      ylab("CO2") +  # Label y-axis
+      ylab(paste0(param, " concentration")) +  # Label y-axis
       xlab("Time") +  # Label x-axis
-      geom_vline(xintercept = cPrime_seg$x0)  # Add vertical lines at change points
+      geom_vline(xintercept = cwPrime_seg$x0)  # Add vertical lines at change points
     
     # Create a ggplot for visualizing PAR over time
     p1 <- ggplot(data = dtSub,  
@@ -203,14 +212,14 @@ calcTentFluxes <- function(
       ylab("PAR") +  # Label y-axis
       xlab("Time") +  # Label x-axis
       labs(title = paste0(flux)) +  # Set title based on flux filename
-      geom_vline(xintercept = cPrime_seg$x0)  # Add vertical lines at change points
+      geom_vline(xintercept = cwPrime_seg$x0)  # Add vertical lines at change points
     
     # Combine the two plots vertically
     p_c <- plot_grid(p1, p2, ncol=1, align="v", axis=1) 
     plot(p_c)  # Display the combined plot
     
-    # Create a sequence of segment indices based on the number of rows in cPrime_seg data frame
-    segs <- c(1:nrow(cPrime_seg))  
+    # Create a sequence of segment indices based on the number of rows in cwPrime_seg data frame
+    segs <- c(1:nrow(cwPrime_seg))  
     
     # Initialize vectors to store various calculated metrics
     aicLinearFit <- c()  # Stores AIC values for linear fits
@@ -238,13 +247,13 @@ calcTentFluxes <- function(
     for(s in segs){  
       end <- length(par)  # Get the total number of PAR values
       
-      s1 <- cPrime_seg$x0[s]  # Starting index for current segment
+      s1 <- cwPrime_seg$x0[s]  # Starting index for current segment
       
       # Determine the ending index for the current segment
-      if(s == nrow(cPrime_seg)){  
+      if(s == nrow(cwPrime_seg)){  
         s2 <- end  # If it's the last segment, use the last index
       } else{
-        s2 <- cPrime_seg$x0[s+1]  # Otherwise, use the starting index of the next segment
+        s2 <- cwPrime_seg$x0[s+1]  # Otherwise, use the starting index of the next segment
       }
       
       # Calculate the mean signal strength and PAR for the current segment
@@ -254,18 +263,16 @@ calcTentFluxes <- function(
       cvPAR <- sdPAR/meanPAR
       
       # Select the concentration variable based on the parameter specified
+      # Tag to identify the parameter being processed
+      
       if ("co2" == param) {  
         cwPrime <- cPrime  # Use cPrime for CO2
-      } else if ("h2o" == param) {  
-        cwPrime <- wPrime  # Use wPrime for H2O
-      }
-      
-      # Tag to identify the parameter being processed
-      if ("co2" == param) {  
         tag <- "cPrime"  
       } else if ("h2o" == param) {  
+        cwPrime <- wPrime  # Use wPrime for H2O
         tag <- "wPrime"  
       }
+      
       
       # Proceed only if both signal strength and PAR exceed the respective thresholds
       if((meanSigStrength > sigStrengthThresh) && (meanPAR > parThresh) && (cvPAR < .25)){  

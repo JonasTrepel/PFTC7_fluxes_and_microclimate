@@ -39,7 +39,9 @@ checkFluxFlags <- function(
   if(is.null(fluxDF)){print("Please provide a dataframe with gas concentrations")}
 
   fittedFluxes <- fittedFluxes %>% 
-    mutate(methodFlag = "Segmented")
+    mutate(methodFlag = "Segmented", 
+           startTime = NA, 
+           endTime = NA)
   
   # Loop through each unique flux measurement filename in the flux data frame
 
@@ -145,7 +147,7 @@ checkFluxFlags <- function(
       geom_line() +  # Add lines connecting the points
       theme(legend.position = "bottom") +  # Remove legend
       #ylim(min(dtSub[[co2Col]], na.rm = TRUE), max(dtSub[[co2Col]], na.rm = TRUE)) +  # Set y-axis limits for CO2
-      ylab("CO2") +  # Label y-axis
+      ylab(paste(param, "concentration")) +  # Label y-axis
       xlab("Time") +  # Label x-axis
       geom_vline(xintercept = cPrime_seg$x0)  # Add vertical lines at change points
     
@@ -241,7 +243,10 @@ checkFluxFlags <- function(
         
         p3 <- p2 + 
           geom_line(data = predPlot, aes(x = time, y = pred, alpha = rsq), color = "black", linewidth = 1.1) +
-          labs(title = paste0(flux))
+          labs(title = paste0(flux),
+               subtitle = paste0("Flux type: ",
+                                 unique(fittedFluxes[fittedFluxes$filename == flux]$fluxType),
+                                 "; Flux value: ", round(unique(fittedFluxes[fittedFluxes$filename == flux]$fluxValue), 2)))
         print(p3)
         pg2 <- plot_grid(p1, p3, ncol=1, align="v", axis=1,   rel_heights = c(1, 2)) 
         print(pg2)
@@ -297,7 +302,10 @@ checkFluxFlags <- function(
         ylab(paste0(param, " concentration")) +  # Label y-axis
         xlab("Time") + 
         geom_line(data = pred, aes(x = time, y = pred, alpha = rsq), color = "black", linewidth = 1.1) +
-        labs(title = paste0(flux))
+        labs(title = paste0(flux),
+             subtitle = paste0("Flux type: ",
+                               unique(fittedFluxes[fittedFluxes$filename == flux]$fluxType),
+                               "; Flux value: ", round(unique(fittedFluxes[fittedFluxes$filename == flux]$fluxValue), 2)))
       print(p3)
       
       pg2 <- plot_grid(p1, p3, ncol=1, align="v", axis=1,   rel_heights = c(1, 2)) 
@@ -326,18 +334,18 @@ checkFluxFlags <- function(
       
       ### update the respective columns 
       
-      fittedFluxes[filename == flux, ]$methodFlag <- paste0("manually fitted. start time: ", startTime, ", end time: ", endTime)
-      fittedFluxes[filename == flux, ]$methodFlag <- paste0("manually fitted. start time: ", startTime, ", end time: ", endTime)
-
+      fittedFluxes[filename == flux, ]$methodFlag <- paste0("manually fitted")
+      fittedFluxes[filename == flux, ]$startTime <- startTime
+      fittedFluxes[filename == flux, ]$endTime <- endTime
       fittedFluxes[filename == flux, ]$fluxValue <- param_lm
       fittedFluxes[filename == flux, ]$r2 <- r2LinearFit
       fittedFluxes[filename == flux, ]$totalRsq <- r2LinearFit
       fittedFluxes[filename == flux, ]$segFlag <- NA
       fittedFluxes[filename == flux, ]$fluxDirectionFlag <- NA
-      fittedFluxes[filename == flux, ]$avgCO2 <- 
-      fittedFluxes[filename == flux, ]$avgH2O <- 
-      fittedFluxes[filename == flux, ]$avgTemperatureC <- 
-      fittedFluxes[filename == flux, ]$avgPressureKPa <- 
+      fittedFluxes[filename == flux, ]$avgCO2 <- cav
+      fittedFluxes[filename == flux, ]$avgH2O <- wav
+      fittedFluxes[filename == flux, ]$avgTemperatureC <- avgTemperatureC
+      fittedFluxes[filename == flux, ]$avgPressureKPa <- avgPressureKPa
       fittedFluxes[filename == flux, ]$segSD <- NA
         
         
@@ -349,3 +357,4 @@ checkFluxFlags <- function(
   # Return the combined data table with calculated fluxes
   return(fittedFluxes)  
 }
+

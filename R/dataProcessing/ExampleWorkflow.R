@@ -10,12 +10,11 @@ source("R/functions/getFluxDF.R")
 source("R/functions/readAndAddPAR.R")
 source("R/functions/calcTentFluxes.R")
 source("R/functions/checkFluxFlags.R")
-
 source("R/functions/calcSR.R")
 
 
 
-### reguired packages: 
+### required packages: 
 
 
 ## path with flux files: 
@@ -94,45 +93,20 @@ co2FluxDT <- calcTentFluxes(
 )
 
 
-fluxMetaSmall <- fluxMeta  %>% 
-  rename(filename = Filename) %>% 
-  dplyr::select(filename, elevation, aspect) %>% unique()
-co2FluxDT %>% 
-  left_join(fluxMetaSmall) %>%
-  filter(fluxFlag == "keep") %>% 
-  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
-  ggplot() +
-  geom_boxplot(aes(x = elevation, y = fluxValue, color = aspect)) +
-  geom_jitter(aes(x = elevation, y = fluxValue, color = aspect)) +
-  facet_wrap(~fluxType)
-
-library(tidylog)
-co2FluxDT %>%
-  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
-  group_by(plotID, fluxType) %>% 
-  filter(fluxFlag == "keep") %>% 
-  slice_max(r2) %>% 
-  left_join(fluxMetaSmall) %>%
-  mutate(fluxType = ifelse(fluxType == "resp" & dayOrNight == "night", "nightResp", fluxType)) %>% 
-  ggplot() +
-  geom_boxplot(aes(x = elevation, y = fluxValue, color = aspect), outlier.shape = NA) +
-  geom_point(aes(x = elevation, y = fluxValue, color = aspect), size = .75) +
-  facet_wrap(~fluxType)
-
 ## inspect CO2 fluxes 
 
-fluxIDs <-   co2FluxDT %>% 
+weirdCO2IDs <-   co2FluxDT %>% 
   filter(fluxType == "photo" & fluxValue < 0) %>% 
   dplyr::select(filename) %>% pull()
 
-co2FluxDT.test <- checkFluxFlags(
+co2FluxChecked <- checkFluxFlags(
   vol = 2.197, #default 
   area = 1.69, #default 
   sigStrengthThresh = 95.0, #default 
   parThresh = 650, #default 
   fluxDF = fluxDT, #default 
   fittedFluxes = co2FluxDT, 
-  fluxIDs = fluxIDs,
+  fluxIDs = weirdCO2IDs,
   param = "co2", #default 
   parCol = "PAR", #default 
   dateTimeCol = "DateTime", #default 
@@ -148,7 +122,9 @@ co2FluxDT.test <- checkFluxFlags(
   dayNightCol = "day_night"
 )
 
-table(co2FluxDT.test$methodFlag)
+table(co2FluxChecked$methodFlag)
+
+
 ### calculate H2O fluxes 
 h2oFluxDT <- calcTentFluxes(
   vol = 2.197, #default 
@@ -171,6 +147,32 @@ h2oFluxDT <- calcTentFluxes(
   dayNightCol = "day_night"
 )
 
+weirdH2OIDs <-   h2oFluxDT %>% 
+  filter(fluxType == "photo" & fluxValue < 0) %>% 
+  dplyr::select(filename) %>% pull()
+
+h2oFluxChecked <- checkFluxFlags(
+  vol = 2.197, #default 
+  area = 1.69, #default 
+  sigStrengthThresh = 95.0, #default 
+  parThresh = 650, #default 
+  fluxDF = fluxDT, #default 
+  fittedFluxes = h2oFluxDT, 
+  fluxIDs = weirdH2OIDs,
+  param = "co2", #default 
+  parCol = "PAR", #default 
+  dateTimeCol = "DateTime", #default 
+  co2Col = "ConcCO2", #default 
+  h2oCol = "ConcH2O", #default 
+  signalStrengthCol = "SignalStrength", #default 
+  tempCol = "AirTemperature", #default 
+  pressureCol = "PressureKPa", #default 
+  fluxTypeCol = "measurement", #default 
+  plotIDCol = "plotID", #default 
+  skip = 7, 
+  redoCol = "redo",
+  dayNightCol = "day_night"
+)
 
 ##### Get Soil Respiration #####
 
@@ -234,8 +236,9 @@ fluxCombLong <- fluxComb %>%
                values_to = "fluxValue")
 library(ggridges)
 ggplot(data = fluxCombLong) +
-  geom_density_ridges(aes(y = as.factor(elevation), x = fluxValue)) +
-  facet_wrap(~fluxType, scales = "free")
+  geom_density_ridges(aes(y = as.factor(elevation), x = fluxValue, fill = aspect), alpha = 0.6) +
+  facet_wrap(~fluxType, scales = "free") +
+  theme_bw()
 
 
 ### Write data
@@ -283,6 +286,7 @@ ggplot(data = compH2O) +
   geom_abline() +
   labs(title = "H2O Fluxes", y = "Manually Processed Fluxes", x = "Fully Automated Fluxes") +
   theme_bw()
+
 
 ### check if the flagged fluxes overlap 
 
