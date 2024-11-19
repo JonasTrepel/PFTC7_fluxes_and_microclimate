@@ -327,7 +327,7 @@ checkFluxFlags <- function(
       
       # Calculate the linear model parameter based on the parameter type
       if ("co2" == param) {  
-        param_lm <- -(vol * p_av * (1000) * dcw_dt)/(R * area * (t_av + 273.15)) 
+        param_lm <- (vol * p_av * (1000) * dcw_dt)/(R * area * (t_av + 273.15)) 
       } else if ("h2o" == param) {  
         param_lm <- (vol * p_av * (1000) * dcw_dt)/(R * area * (t_av + 273.15)) 
       }  

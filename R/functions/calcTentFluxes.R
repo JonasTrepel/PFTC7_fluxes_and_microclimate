@@ -324,7 +324,7 @@ calcTentFluxes <- function(
           
           # Calculate the linear model parameter based on the parameter type
           if ("co2" == param) {  
-            param_lm[i] <- -(vol * p_av * (1000) * dcw_dt[i])/(R * area * (t_av + 273.15))*frac_sample  
+            param_lm[i] <- (vol * p_av * (1000) * dcw_dt[i])/(R * area * (t_av + 273.15))*frac_sample  
           } else if ("h2o" == param) {  
             param_lm[i] <- (vol * p_av * (1000) * dcw_dt[i])/(R * area * (t_av + 273.15))*frac_sample  
           }  
