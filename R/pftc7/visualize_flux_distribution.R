@@ -109,3 +109,5 @@ dt %>%
   filter(complete.cases(.)) %>% 
   pull() %>% 
   sd()
+
+unique(dt$flag)
