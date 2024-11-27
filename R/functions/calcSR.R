@@ -4,7 +4,7 @@
 library(tidyverse)
 #library(tidylog)
 
-#assumptions: read SR files with the readSR function
+#assumptions: read SR files with the readSR or with getFluxDF function
 
 #arguments/required input: 
 ## data (LI8100 flux data )
@@ -26,7 +26,7 @@ calcSR <- function(data, area = 317.8, volume = 1807.6){
   volume <- 1807.6/1000000
   R <- 8.314472
   
-  unique <- "2000_east_1"
+ # unique <- "2000_east_1"
   
   for(unique in unique(data$plotID)){
     
@@ -45,11 +45,13 @@ calcSR <- function(data, area = 317.8, volume = 1807.6){
       Rsq = summary(lm.co2)$r.sq,
       fluxType = "SoilResp", 
       #General information
-      plotID = unique(data[data$plotID == unique, ]$plotID),
+      plot = unique(data[data$plotID == unique, ]$plot),
       site = unique(data[data$plotID == unique, ]$site),
       plotID = unique(data[data$plotID == unique, ]$plotID),
       elevation = unique(data[data$plotID == unique, ]$elevation),
-      aspect = unique(data[data$plotID == unique, ]$aspect)) %>% mutate(
+      aspect = unique(data[data$plotID == unique, ]$aspect), 
+      DateTime = min(data[data$plotID == unique, ]$DateTime)) %>%
+      mutate(
       fluxValue = (volume * pressure * (1000) * co2DrySlope)/(R * area * (temp + 273.15)))  %>% 
       dplyr::select(-co2DrySlope)
     
@@ -58,11 +60,13 @@ calcSR <- function(data, area = 317.8, volume = 1807.6){
       Rsq = summary(lm.h2o)$r.sq,
       fluxType = "SoilEvap", 
       #General information
-      plotID = unique(data[data$plotID == unique, ]$plotID),
+      plot = unique(data[data$plotID == unique, ]$plot),
       site = unique(data[data$plotID == unique, ]$site),
       plotID = unique(data[data$plotID == unique, ]$plotID),
       elevation = unique(data[data$plotID == unique, ]$elevation),
-      aspect = unique(data[data$plotID == unique, ]$aspect)) %>% mutate(
+      aspect = unique(data[data$plotID == unique, ]$aspect), 
+      DateTime = min(data[data$plotID == unique, ]$DateTime)) %>%
+      mutate(
         fluxValue = (volume * pressure * (1000) * h2ODrySlope)/(R * area * (temp + 273.15))) %>% 
       dplyr::select(-h2ODrySlope)
     

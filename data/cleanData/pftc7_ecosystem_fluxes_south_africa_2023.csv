@@ -1,0 +1,1245 @@
+site_id,elevation_m_asl,aspect,plot_id,r_squared,flag,flux_type,flux_value,unique_location_id,clean_flux_type,flux_category,device
+1,2000,east,1,0.906841783805734,okay,nee,-2.58093315500583,2000_east_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,east,1,0.97632447878297,okay,resp_day,12.6579297354622,2000_east_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,east,1,0.671833187493057,okay,resp_night,1.20947781031192,2000_east_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,east,2,0.714319685935719,okay,nee,-2.9609581064711,2000_east_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,east,2,0.728821051412161,okay,resp_day,3.36626551455801,2000_east_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,east,2,0.989030173611446,okay,resp_night,6.07053848811182,2000_east_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,east,3,0.707519579944692,okay,nee,-1.1201606814968,2000_east_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,east,3,0.966125930401563,okay,resp_day,6.59884474543766,2000_east_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,east,3,0.978401464096788,okay,resp_night,6.98913078926795,2000_east_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,east,4,0.868928403998235,okay,nee,-5.3006098086663,2000_east_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,east,4,0.658577434036411,okay,resp_day,5.37425360740356,2000_east_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,east,4,0.97765608685423,okay,resp_night,4.8676966196861,2000_east_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,east,5,0.689544134580748,okay,nee,-1.37007413878481,2000_east_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,east,5,0.828412714044867,okay,resp_day,6.25784155990308,2000_east_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,east,5,0.810348480693046,okay,resp_night,4.26931053638643,2000_east_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,west,1,0.468044789758046,okay,nee,-0.406644470462638,2000_west_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,west,1,0.957915383204914,okay,resp_day,4.39556799245397,2000_west_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,west,1,0.974975535430683,okay,resp_night,3.35226051210526,2000_west_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,west,2,0.846642821648017,okay,resp_day,4.24429578779444,2000_west_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,west,2,0.979353527515546,okay,resp_night,6.30239498562897,2000_west_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,west,3,0.640593895515293,okay,nee,-1.07119309428075,2000_west_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,west,3,0.67772945717874,okay,resp_day,2.48556277186084,2000_west_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,west,3,0.988142810854255,okay,resp_night,4.81384601549931,2000_west_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,west,4,0.98286475365496,okay,nee,-2.87993314740428,2000_west_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,west,4,0.846312219788427,okay,resp_day,3.1634253320482,2000_west_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,west,4,0.986662211181103,okay,resp_night,9.55456532538425,2000_west_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,west,5,0.913768028446076,okay,nee,-2.78340842286842,2000_west_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+1,2000,west,5,0.9649558597415,okay,resp_day,4.32819682743589,2000_west_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+1,2000,west,5,0.953556532810688,okay,resp_night,3.30532263845458,2000_west_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,east,1,0.830567589400878,okay,nee,-6.50385818627737,2200_east_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,east,1,0.969043362725157,okay,resp_day,8.59048103653081,2200_east_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,east,1,0.630977540237745,okay,resp_night,2.09248269473486,2200_east_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,east,2,0.859830433074801,okay,nee,-11.1343626362019,2200_east_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,east,2,0.96631646851159,okay,resp_day,9.65110959254136,2200_east_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,east,2,0.780352568510428,okay,resp_night,2.07755935304418,2200_east_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,east,3,0.951195640186104,okay,nee,-14.0852931288607,2200_east_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,east,3,0.936569595794337,okay,resp_day,9.13303233058021,2200_east_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,east,3,0.867396848262808,okay,resp_night,2.57351651842543,2200_east_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,east,4,0.982279416782685,okay,nee,-7.56866256645655,2200_east_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,east,4,0.921159489501116,okay,resp_day,7.1362405780127,2200_east_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,east,4,0.396108875430886,okay,resp_night,1.31820130393193,2200_east_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,east,5,0.459933543527353,okay,nee,-1.2568856520607,2200_east_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,east,5,0.773145904824786,okay,resp_day,3.42935413688612,2200_east_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,east,5,0.880819750626803,okay,resp_night,2.71084570623338,2200_east_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,west,1,0.950140126804771,okay,nee,-5.95240943844894,2200_west_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,west,1,0.760766133799931,okay,resp_day,2.13383867852702,2200_west_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,west,1,0.83911322376387,okay,resp_night,28.5455484835373,2200_west_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,west,2,0.905757059345498,okay,nee,-5.01596238735271,2200_west_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,west,2,0.725617156279073,okay,resp_day,5.73107166579275,2200_west_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,west,2,0.91103830289089,okay,resp_night,5.44457018578182,2200_west_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,west,3,0.934929339541052,okay,nee,-6.15936246532124,2200_west_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,west,3,0.796828913751524,okay,resp_day,10.3519435630763,2200_west_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,west,3,0.801275924057548,okay,resp_night,4.4561974797179,2200_west_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,west,4,0.857749468195049,okay,nee,-6.71769566414971,2200_west_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,west,4,0.931078435766493,okay,resp_day,5.5463808638596,2200_west_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,west,4,0.93229628150357,okay,resp_night,3.6582922635908,2200_west_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+2,2200,west,5,0.88377118130247,okay,nee,-4.02664082851267,2200_west_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+2,2200,west,5,0.985578923697319,okay,resp_day,6.40652599584739,2200_west_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+2,2200,west,5,0.800458734712364,okay,resp_night,3.83941706933247,2200_west_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,east,1,0.962123497539571,okay,nee,-12.3358460602951,2400_east_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,east,1,0.981923170874298,okay,resp_day,13.1567427457137,2400_east_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,east,1,0.773949197070051,okay,resp_night,3.57413295321799,2400_east_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,east,2,0.968173826410151,okay,resp_day,17.6668956086498,2400_east_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,east,2,0.992616456257327,okay,resp_night,5.73515458391296,2400_east_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,east,3,0.806301501901292,okay,nee,-1.72788426428589,2400_east_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,east,3,0.946260972111704,okay,resp_day,11.7843401005128,2400_east_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,east,3,0.981053056804745,okay,resp_night,5.36582751492181,2400_east_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,east,4,0.389682654122034,manual_flux_time_selection,nee,18.9884530382301,2400_east_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,east,4,0.7848981786311,okay,resp_day,4.73080898958879,2400_east_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,east,4,0.982749688451025,okay,resp_night,4.4489033452937,2400_east_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,east,5,0.305767804100463,okay,nee,-2.03905509222174,2400_east_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,east,5,0.90348278968338,okay,resp_day,5.45430037067845,2400_east_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,east,5,0.992247699965657,okay,resp_night,6.51371299307949,2400_east_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,west,1,0.961767806722378,okay,nee,-6.05296943001383,2400_west_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,west,1,0.836812071565815,okay,resp_day,3.20946038846135,2400_west_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,west,1,0.947520444987933,okay,resp_night,3.01313794382862,2400_west_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,west,2,0.86048348092639,okay,nee,-1.59024272723601,2400_west_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,west,2,0.782152229830831,okay,resp_day,3.30447680562702,2400_west_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,west,2,0.980745260678706,okay,resp_night,4.76558190504673,2400_west_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,west,3,0.606187952945072,okay,nee,-1.24666513823674,2400_west_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,west,3,0.827539977355672,okay,resp_day,4.09470574483733,2400_west_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,west,3,0.962865424637539,okay,resp_night,1.87765627078166,2400_west_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,west,4,0.242518662137598,manual_flux_time_selection,nee,3.34213036123338,2400_west_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+3,2400,west,4,0.872353769191635,okay,resp_day,1.84358221007423,2400_west_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,west,4,0.98417764964231,okay,resp_night,4.94873026257332,2400_west_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+3,2400,west,5,0.609187594748264,okay,resp_day,5.8952520956603,2400_west_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+3,2400,west,5,0.955381303221301,okay,resp_night,5.3789584475773,2400_west_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,east,1,0.802485328577592,okay,nee,-4.21630316897487,2600_east_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,east,1,0.787912046875984,okay,resp_day,3.941738694584,2600_east_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,east,1,0.942944718056373,okay,resp_night,8.86939554094051,2600_east_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,east,2,0.400134528998728,okay,nee,-1.29489787760445,2600_east_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,east,2,0.775201591805046,okay,resp_day,10.4167981762791,2600_east_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,east,2,0.990495526662174,okay,resp_night,10.4915115965949,2600_east_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,east,3,0.740621014292375,okay,nee,-3.724724759058,2600_east_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,east,3,0.923868239410893,okay,resp_day,11.2336963241994,2600_east_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,east,3,0.960401568403658,okay,resp_night,4.58458263116421,2600_east_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,east,4,0.369766807785319,okay,nee,-1.31214821033488,2600_east_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,east,4,0.886610335046814,okay,resp_day,12.982877116217,2600_east_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,east,4,0.949766808338582,okay,resp_night,3.59963572233062,2600_east_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,east,5,0.792352508400912,okay,nee,-2.47159032285047,2600_east_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,east,5,0.939618748151268,okay,resp_day,19.9251865948116,2600_east_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,east,5,0.737265055402729,okay,resp_night,2.1915666868778,2600_east_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,west,1,0.74648271232715,okay,nee,-2.42573330276142,2600_west_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,west,1,0.682831709138839,okay,resp_day,0.835495742128498,2600_west_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,west,1,0.986190946927446,okay,resp_night,5.51097771011375,2600_west_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,west,2,0.53106997763903,okay,nee,-2.13354382276436,2600_west_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,west,2,0.625719231163092,okay,resp_day,1.07472570739189,2600_west_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,west,2,0.626909147133905,okay,resp_night,1.31427595667639,2600_west_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,west,3,0.977079106195978,okay,nee,-3.63277939757025,2600_west_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,west,3,0.845866702215949,okay,resp_day,2.60083965300261,2600_west_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,west,3,0.346016769964121,okay,resp_night,2.00240598535179,2600_west_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,west,4,0.94716991326209,okay,nee,-4.9410822161161,2600_west_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,west,4,0.851244549730758,okay,resp_day,5.26361288772992,2600_west_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,west,4,0.482487796002456,okay,resp_night,1.1241764165215,2600_west_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+4,2600,west,5,0.413920693821686,okay,nee,-1.86367369998721,2600_west_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+4,2600,west,5,0.960035490873669,okay,resp_day,5.74906563866356,2600_west_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+4,2600,west,5,0.709876262905805,okay,resp_night,4.14590428820395,2600_west_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,east,1,0.530652615686998,manual_flux_time_selection,nee,0.648480356133226,2800_east_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,east,1,0.953320868837657,okay,resp_day,8.15371862980433,2800_east_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,east,1,0.902813534890274,okay,resp_night,5.28598731236241,2800_east_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,east,2,0.880061436021176,okay,resp_day,12.6778311960705,2800_east_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,east,2,0.806210050280924,okay,resp_night,1.58861612831235,2800_east_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,east,3,0.400028226426388,manual_flux_time_selection,nee,0.302340132401051,2800_east_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,east,3,0.95494273808332,okay,resp_day,9.66750310476634,2800_east_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,east,3,0.4567180171477,okay,resp_night,0.171732247300977,2800_east_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,east,4,0.959995874124988,okay,resp_day,4.8209736673985,2800_east_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,east,5,0.703758953726648,okay,nee,-0.816061611555373,2800_east_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,east,5,0.959089772845709,okay,resp_day,6.69873254626874,2800_east_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,east,5,0.713560830327634,okay,resp_night,2.03953801294714,2800_east_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,west,1,0.633086472703727,okay,nee,-2.01423644088801,2800_west_1,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,west,1,0.988739250126562,okay,resp_day,11.096734496585,2800_west_1,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,west,1,0.974944383829705,okay,resp_night,3.98135872200881,2800_west_1,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,west,2,0.810629095998039,okay,nee,-2.15086111815585,2800_west_2,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,west,2,0.757082844193746,okay,resp_day,5.59994635289941,2800_west_2,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,west,2,0.988746496951045,okay,resp_night,6.03875471730217,2800_west_2,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,west,3,0.886482946836958,okay,nee,-1.52619049883455,2800_west_3,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,west,3,0.938918909765355,okay,resp_day,5.59138901139297,2800_west_3,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,west,3,0.329217086185646,okay,resp_night,1.25192362088193,2800_west_3,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,west,4,0.277754429150245,manual_flux_time_selection,nee,1.63981117402656,2800_west_4,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,west,4,0.585235910519658,okay,resp_day,3.50372947925252,2800_west_4,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,west,4,0.571515393705515,okay,resp_night,2.0519809322152,2800_west_4,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+5,2800,west,5,0.940835591173218,okay,nee,-0.958965313401835,2800_west_5,"Net Ecosystem Exchange
+(µmol/m²/s)",Carbon,LI-7500
+5,2800,west,5,0.75017579017289,okay,resp_day,0.947106208593013,2800_west_5,"Ecosystem Respiration
+(µmol/m²/s; Day)",Carbon,LI-7500
+5,2800,west,5,0.990670279352825,okay,resp_night,5.70858111613066,2800_west_5,"Ecosystem Respiration
+(µmol/m²/s; Night)",Carbon,LI-7500
+1,2000,east,1,0.973060845423666,okay,evap_day,3.29498567974819,2000_east_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,east,1,0.571234864477161,manual_flux_time_selection,evap_night,-0.0524450234358052,2000_east_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,east,1,0.993801711747902,manual_flux_time_selection,evapotrans,4.37675795701125,2000_east_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,east,2,0.955885332663539,manual_flux_time_selection,evap_day,1.82328944510905,2000_east_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,east,2,0.937615216522371,okay,evap_night,-0.120068168385492,2000_east_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,east,2,0.767831886657295,okay,evapotrans,2.10962384438704,2000_east_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,east,3,0.979005615003485,okay,evap_day,2.25208469641512,2000_east_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,east,3,0.908634639889837,okay,evap_night,-0.0953961112164763,2000_east_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,east,3,0.965696353165945,okay,evapotrans,4.20914737440637,2000_east_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,east,4,0.877098391502532,okay,evap_day,2.17172892088245,2000_east_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,east,4,0.704777508847587,okay,evap_night,-0.0372434760708452,2000_east_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,east,4,0.956013038271897,okay,evapotrans,3.87243801417707,2000_east_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,east,5,0.976614904018915,okay,evap_day,2.41879434270658,2000_east_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,east,5,0.273949964624977,okay,evap_night,-0.0190214664591687,2000_east_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,east,5,0.957520043553183,okay,evapotrans,3.24745592472452,2000_east_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,west,1,0.96929148208233,manual_flux_time_selection,evap_day,1.00843782324745,2000_west_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,west,1,0.942363718530181,okay,evap_night,0.124733991819617,2000_west_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,west,1,0.949982316864998,okay,evapotrans,2.60041179075105,2000_west_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,west,2,0.982909687827694,okay,evap_day,1.51989586876811,2000_west_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,west,2,0.91710698851132,okay,evap_night,0.155481212991075,2000_west_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,west,2,0.977012663413272,okay,evapotrans,3.19241846160748,2000_west_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,west,3,0.824908447553732,okay,evap_day,0.587557391263191,2000_west_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,west,3,0.915292572611635,okay,evap_night,0.107907887140238,2000_west_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,west,3,0.985899064190548,manual_flux_time_selection,evapotrans,1.6897909647213,2000_west_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,west,4,0.984045144947191,okay,evap_day,0.793974449070285,2000_west_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,west,4,0.959925416057484,okay,evap_night,0.382899045516459,2000_west_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,west,4,0.992068536316798,okay,evapotrans,1.57515857816958,2000_west_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+1,2000,west,5,0.791261134319391,okay,evap_day,0.475634154071797,2000_west_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+1,2000,west,5,0.977205944182383,okay,evap_night,0.491080516251172,2000_west_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+1,2000,west,5,0.991237718065818,manual_flux_time_selection,evapotrans,1.65845437489713,2000_west_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,east,1,0.969495442356137,okay,evap_day,1.2389377566495,2200_east_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,east,1,0.0216186301889273,manual_flux_time_selection,evap_night,0.0048230244629539,2200_east_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,east,1,0.988240407303163,okay,evapotrans,2.16735817259073,2200_east_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,east,2,0.991342390335284,okay,evap_day,2.29980068115148,2200_east_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,east,2,0.987143728621901,manual_flux_time_selection,evap_night,-0.526882593581022,2200_east_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,east,2,0.986543151645739,okay,evapotrans,4.85620704278761,2200_east_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,east,3,0.974420233728287,okay,evap_day,1.24201649484677,2200_east_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,east,3,0.913354382019833,okay,evap_night,-0.136744648640301,2200_east_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,east,3,0.985269346350709,okay,evapotrans,4.73762662836497,2200_east_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,east,4,0.983825938922304,okay,evap_day,1.14596702393065,2200_east_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,east,4,0.902452353997982,okay,evap_night,-0.196817807340686,2200_east_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,east,4,0.985345008294983,manual_flux_time_selection,evapotrans,2.90331041227487,2200_east_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,east,5,0.995025187559864,manual_flux_time_selection,evap_day,1.03957647131025,2200_east_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,east,5,0.833328165682003,okay,evap_night,0.057121107137555,2200_east_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,east,5,0.993580114538754,manual_flux_time_selection,evapotrans,1.93367081237949,2200_east_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,west,1,0.948429262866212,okay,evap_day,0.788954345254902,2200_west_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,west,1,0.834705406771719,manual_flux_time_selection,evap_night,0.114820460279298,2200_west_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,west,1,0.991882061851812,manual_flux_time_selection,evapotrans,2.29721978829612,2200_west_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,west,2,0.987670474654957,okay,evap_day,1.29216018517532,2200_west_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,west,2,0.921477615102994,okay,evap_night,-0.213679581197026,2200_west_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,west,2,0.997437718114638,okay,evapotrans,2.5875386749226,2200_west_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,west,3,0.894080405654643,okay,evap_day,0.782492705522385,2200_west_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,west,3,0.984148064677831,okay,evap_night,-0.282196135797656,2200_west_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+2,2200,west,3,0.916758646318219,okay,evapotrans,1.88043865431779,2200_west_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,west,4,0.754808876738544,okay,evap_day,0.401783137034368,2200_west_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,west,4,0.923948363977006,okay,evapotrans,1.88231668228488,2200_west_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+2,2200,west,5,0.862445682768093,okay,evap_day,1.10096355067594,2200_west_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+2,2200,west,5,0.993598423839725,okay,evapotrans,2.80251620792624,2200_west_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,east,1,0.996524186721198,okay,evap_day,2.57075579242313,2400_east_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,east,1,0.823697099035095,manual_flux_time_selection,evap_night,0.0985725933716079,2400_east_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,east,1,0.990964144710421,okay,evapotrans,2.77719873375073,2400_east_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,east,2,0.997314236494697,okay,evap_day,2.63104966371672,2400_east_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,east,2,0.955836522775895,okay,evap_night,-0.110075753972709,2400_east_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,east,2,0.988752650445516,okay,evapotrans,3.72862522525344,2400_east_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,east,3,0.920093360796772,okay,evap_day,2.11228747571098,2400_east_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,east,3,0.980554559889679,okay,evap_night,-0.193350919198507,2400_east_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,east,3,0.992329361017984,okay,evapotrans,3.6706738194143,2400_east_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,east,4,0.989613082963631,okay,evap_day,2.2299539197557,2400_east_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,east,4,0.854429935444616,okay,evap_night,-0.0940745319510187,2400_east_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,east,4,0.993122902481415,okay,evapotrans,3.82056352024745,2400_east_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,east,5,0.992434697134244,okay,evap_day,0.981019565140575,2400_east_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,east,5,0.927558914072566,okay,evap_night,-0.096139095893615,2400_east_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,east,5,0.986853011054172,okay,evapotrans,4.75028952466673,2400_east_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,west,1,0.57628951440183,okay,evap_day,0.430536837297628,2400_west_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,west,1,0.934073116899184,okay,evap_night,-0.12883349528291,2400_west_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,west,1,0.966348219934138,manual_flux_time_selection,evapotrans,1.89138009845085,2400_west_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,west,2,0.955873330161041,manual_flux_time_selection,evap_day,1.26741792050647,2400_west_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,west,2,0.932997434889308,okay,evap_night,-0.156010185895576,2400_west_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,west,2,0.96027815808665,manual_flux_time_selection,evapotrans,1.94237547535684,2400_west_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,west,3,0.947095359670186,okay,evap_day,0.999857652657507,2400_west_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,west,3,0.920809560320284,okay,evap_night,-0.0731719646100594,2400_west_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,west,3,0.992094458763172,okay,evapotrans,1.80144019963348,2400_west_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,west,4,0.934720412454424,manual_flux_time_selection,evap_day,0.975173243661207,2400_west_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,west,4,0.904857327008333,okay,evap_night,-0.0928451085337871,2400_west_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,west,4,0.9921613329496,okay,evapotrans,2.39159761807489,2400_west_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+3,2400,west,5,0.949746381161903,okay,evap_day,0.946293019531128,2400_west_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+3,2400,west,5,0.971015248159155,okay,evap_night,-0.224507005127113,2400_west_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+3,2400,west,5,0.989366313059467,manual_flux_time_selection,evapotrans,1.98438729732161,2400_west_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,east,1,0.988040617529953,okay,evap_day,2.23242992158622,2600_east_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,east,1,0.936129210968449,okay,evap_night,-0.139860028875518,2600_east_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,east,1,0.984205032275796,okay,evapotrans,3.55455712115424,2600_east_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,east,2,0.994591307187949,okay,evap_day,3.12876232249191,2600_east_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,east,2,0.924677120664804,manual_flux_time_selection,evap_night,0.0908183837798101,2600_east_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,east,2,0.975827233371975,manual_flux_time_selection,evapotrans,2.98402276997952,2600_east_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,east,3,0.988431134365519,okay,evap_day,2.55309163159661,2600_east_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,east,3,0.791850270083348,manual_flux_time_selection,evap_night,0.0996049690008303,2600_east_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,east,3,0.981624579699703,manual_flux_time_selection,evapotrans,3.6233214769858,2600_east_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,east,4,0.977881679162366,okay,evap_day,2.60636121689825,2600_east_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,east,4,0.985793728005516,okay,evap_night,-0.995809339210616,2600_east_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,east,4,0.9691438961982,okay,evapotrans,4.30230825364862,2600_east_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,east,5,0.995119815142152,okay,evap_day,3.15846672246874,2600_east_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,east,5,0.508684678687167,okay,evap_night,0.0378101073276708,2600_east_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,east,5,0.992146185779173,okay,evapotrans,4.33795400353019,2600_east_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,west,1,0.941457154526985,manual_flux_time_selection,evap_day,0.523053739811056,2600_west_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,west,1,0.00092559093750416,okay,evap_night,0.00113100275169334,2600_west_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,west,1,0.983765339440285,okay,evapotrans,0.870138162053663,2600_west_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,west,2,0.945920295322168,okay,evap_day,0.44299651348663,2600_west_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,west,2,0.944963913163128,okay,evap_night,0.206008869508399,2600_west_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,west,2,0.926221910925374,okay,evapotrans,0.806860505062469,2600_west_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,west,3,0.0349834946955183,manual_flux_time_selection,evap_day,0.0178192361968268,2600_west_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,west,3,0.931899613645778,okay,evap_night,0.23800266020652,2600_west_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,west,3,0.993393673263161,okay,evapotrans,1.33127545291147,2600_west_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,west,4,0.959538629167411,okay,evap_day,1.07126355182653,2600_west_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,west,4,0.813483651460552,okay,evap_night,-0.123855692184347,2600_west_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,west,4,0.997448336985024,okay,evapotrans,1.66493448965602,2600_west_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+4,2600,west,5,0.989755938976171,okay,evap_day,1.62824244075993,2600_west_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+4,2600,west,5,0.954326475908376,okay,evap_night,0.11808321200149,2600_west_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+4,2600,west,5,0.989266851740405,okay,evapotrans,2.41529258348522,2600_west_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,east,1,0.985452490213713,okay,evap_day,1.42133071301296,2800_east_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,east,1,0.990366688028606,okay,evap_night,-0.29950973167817,2800_east_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,east,1,0.994434509839454,okay,evapotrans,2.24728107455958,2800_east_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,east,2,0.982984433654284,okay,evap_day,1.69509404042374,2800_east_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,east,2,0.983527876247093,manual_flux_time_selection,evap_night,0.170827284315332,2800_east_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,east,2,0.981296573288352,okay,evapotrans,3.1614010108274,2800_east_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,east,3,0.986883819938823,okay,evap_day,1.8328695950979,2800_east_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,east,3,0.852818380424257,okay,evap_night,0.070641867407258,2800_east_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,east,3,0.977053540095607,okay,evapotrans,2.30869774514716,2800_east_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,east,4,0.994433090758814,okay,evap_day,1.75682575404931,2800_east_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,east,4,0.454592145535052,okay,evap_night,-0.0291817110960431,2800_east_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,east,4,0.992729785559543,okay,evapotrans,2.27343648354065,2800_east_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,east,5,0.989947144834955,okay,evap_day,1.9930509628459,2800_east_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,east,5,0.324237351048093,okay,evap_night,0.0138729724721832,2800_east_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,east,5,0.996116251938219,manual_flux_time_selection,evapotrans,2.75738012753326,2800_east_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,1,0.993714067627349,okay,evap_day,2.39877433046023,2800_west_1,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,west,1,0.323600082645011,okay,evap_night,0.0164402298060512,2800_west_1,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,west,1,0.99747043119857,okay,evapotrans,3.75296499918909,2800_west_1,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,2,0.963142292353917,okay,evap_day,1.33807676834707,2800_west_2,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,west,2,0.987394319759413,manual_flux_time_selection,evap_night,1.36504015047349,2800_west_2,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,west,2,0.969672804918708,manual_flux_time_selection,evapotrans,2.07519789283731,2800_west_2,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,3,0.980723263825424,okay,evap_day,1.49417645779822,2800_west_3,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,west,3,0.994049222179207,manual_flux_time_selection,evap_night,-0.835916698960713,2800_west_3,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,west,3,0.981933866704555,manual_flux_time_selection,evapotrans,2.02906226561921,2800_west_3,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,4,0.960924660732989,okay,evap_day,0.603291051996904,2800_west_4,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,west,4,0.343766741865001,manual_flux_time_selection,evap_night,0.0698788006666967,2800_west_4,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,west,4,0.953057452246709,manual_flux_time_selection,evapotrans,0.936251944650313,2800_west_4,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,5,0.927870617443474,okay,evap_day,0.926840289641567,2800_west_5,"Evaporation
+(mmol/m²/s; Day)",Water,LI-7500
+5,2800,west,5,0.983836358595597,manual_flux_time_selection,evap_night,1.04876239144171,2800_west_5,"Evaporation
+(mmol/m²/s; Night)",Water,LI-7500
+5,2800,west,5,0.99585722638514,okay,evapotrans,2.57097982376511,2800_west_5,"Evapotranspiration
+(mmol/m²/s)",Water,LI-7500
+5,2800,west,5,0.968383427290929,,soil_evap,-0.0172741146681648,2800_west_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,west,4,0.742758699159091,,soil_evap,-0.00639627821847782,2800_west_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,west,3,0.988530520188228,,soil_evap,-0.0227439703977211,2800_west_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,west,2,0.92447004643803,,soil_evap,-0.0103327988844388,2800_west_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,west,1,0.980771043410239,,soil_evap,-0.0201070706873712,2800_west_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,east,5,0.943880168688282,,soil_evap,-0.00738233951464485,2800_east_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,east,4,0.996934235869905,,soil_evap,-0.0178537519400828,2800_east_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,east,3,0.976466744266032,,soil_evap,-0.0121027158925209,2800_east_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,east,2,0.987724172989088,,soil_evap,-0.0162242097674327,2800_east_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,east,1,0.973103708797097,,soil_evap,-0.00890357502102561,2800_east_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,west,5,0.947522352512807,,soil_evap,-0.00268974267207418,2600_west_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,west,4,0.996965737056077,,soil_evap,-0.00731943900348092,2600_west_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,west,3,0.980221084929047,,soil_evap,-0.00528529108604215,2600_west_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,west,2,0.965393381442278,,soil_evap,-0.00474428316920131,2600_west_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,west,1,0.99917580214049,,soil_evap,-0.0129643544885714,2600_west_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,east,5,0.150662425895096,,soil_evap,0.000212663277245137,2600_east_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,east,4,0.980910603740734,,soil_evap,-0.00298574812323978,2600_east_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,east,3,0.847928170427652,,soil_evap,0.00159192744771635,2600_east_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,east,2,0.9742329516848,,soil_evap,0.00288970632981098,2600_east_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+4,2600,east,1,0.998070214776395,,soil_evap,0.00705665816197025,2600_east_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,west,5,0.999087872313202,,soil_evap,-0.0184633340441426,2400_west_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,west,4,0.997903585833349,,soil_evap,-0.0185233713149245,2400_west_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,west,3,0.982488639444707,,soil_evap,-0.00881098168126798,2400_west_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,west,2,0.997254195387877,,soil_evap,-0.0244128160916116,2400_west_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,west,1,0.998627814988394,,soil_evap,-0.0171353675574256,2400_west_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,east,5,0.992821220814239,,soil_evap,-0.00654889403251933,2400_east_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,east,4,0.983521089105557,,soil_evap,-0.00504089351451166,2400_east_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,east,3,0.997351610249065,,soil_evap,0.0157087976154484,2400_east_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,east,2,0.999291558153925,,soil_evap,0.0211319051761628,2400_east_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+3,2400,east,1,0.999497236845238,,soil_evap,0.0240390095265845,2400_east_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,west,5,0.99461459802524,,soil_evap,-0.00697824925311051,2200_west_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,west,4,0.800807542089669,,soil_evap,-0.00115728633461254,2200_west_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,west,3,0.985898737973484,,soil_evap,-0.00370362794430889,2200_west_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,west,2,0.989386545645758,,soil_evap,-0.00667911813782864,2200_west_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,west,1,0.892392365037096,,soil_evap,0.00146529165649727,2200_west_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,east,5,0.993830899544805,,soil_evap,-0.0215559625994741,2200_east_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,east,4,0.993974209109576,,soil_evap,-0.0138935769728724,2200_east_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,east,3,0.994963067182077,,soil_evap,-0.00869161551965654,2200_east_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,east,2,0.92557665201672,,soil_evap,-0.00157332169917725,2200_east_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+2,2200,east,1,0.90828524045028,,soil_evap,-0.00210573343420414,2200_east_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,west,5,0.196884069811447,,soil_evap,-0.000727708692630555,2000_west_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,west,4,0.980206734115218,,soil_evap,-0.00998097984422764,2000_west_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,west,3,0.970347533913093,,soil_evap,-0.00815939846561269,2000_west_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,west,2,0.677639298316134,,soil_evap,-0.00340458812211326,2000_west_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,west,1,0.893533016769013,,soil_evap,0.00381287225794649,2000_west_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,east,5,0.982276017007056,,soil_evap,-0.0046120275059728,2000_east_5,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,east,4,0.868080645168667,,soil_evap,-0.00246344824935802,2000_east_4,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,east,3,0.963072389975905,,soil_evap,-0.00617934189858053,2000_east_3,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,east,2,0.00018040201783084,,soil_evap,1.24990001457267e-05,2000_east_2,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+1,2000,east,1,0.963908252687007,,soil_evap,-0.00520928607793671,2000_east_1,"Soil Evaporation
+(mmol/m²/s)",Water,LI-8100
+5,2800,west,5,0.985005889714922,,soil_resp,0.971226446986958,2800_west_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,west,4,0.993796321137489,,soil_resp,3.00407627367103,2800_west_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,west,3,0.992449632861111,,soil_resp,1.5231269196796,2800_west_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,west,2,0.991615642744599,,soil_resp,1.46233802025642,2800_west_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,west,1,0.992402066624217,,soil_resp,1.19767709959173,2800_west_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,east,5,0.989094724541726,,soil_resp,0.740615067655109,2800_east_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,east,4,0.995468278221315,,soil_resp,0.762900427701872,2800_east_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,east,3,0.989591555265963,,soil_resp,1.01270432074769,2800_east_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,east,2,0.992216664585254,,soil_resp,1.30492028591898,2800_east_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+5,2800,east,1,0.991459418695082,,soil_resp,1.45640539351758,2800_east_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,west,5,0.981890344678993,,soil_resp,0.708655921493805,2600_west_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,west,4,0.97744235303523,,soil_resp,0.311862962009984,2600_west_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,west,3,0.990206760394473,,soil_resp,0.559442555190331,2600_west_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,west,2,0.989381966598267,,soil_resp,0.293616354514056,2600_west_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,west,1,0.991488114975169,,soil_resp,0.318106514389066,2600_west_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,east,5,0.991458426808256,,soil_resp,0.83559474313848,2600_east_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,east,4,0.995664699481957,,soil_resp,0.80949874412781,2600_east_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,east,3,0.992299612532284,,soil_resp,0.398799707236839,2600_east_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,east,2,0.989399041792873,,soil_resp,1.16602198760236,2600_east_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+4,2600,east,1,0.947463903445703,,soil_resp,0.378213785572747,2600_east_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,west,5,0.992121890336653,,soil_resp,0.967993236941923,2400_west_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,west,4,0.993288609745213,,soil_resp,1.25662670840564,2400_west_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,west,3,0.99396729383067,,soil_resp,1.36429397071835,2400_west_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,west,2,0.992961014104765,,soil_resp,1.63918761010873,2400_west_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,west,1,0.993431556850237,,soil_resp,2.05308894772806,2400_west_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,east,5,0.991699628852661,,soil_resp,1.29045693589449,2400_east_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,east,4,0.994981985448458,,soil_resp,1.10976727929196,2400_east_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,east,3,0.995625950423763,,soil_resp,1.1707615989411,2400_east_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,east,2,0.992899776246345,,soil_resp,1.2474884972141,2400_east_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+3,2400,east,1,0.996077391592806,,soil_resp,1.46334990070644,2400_east_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,west,5,0.98985524627442,,soil_resp,1.44579652268656,2200_west_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,west,4,0.987699825371769,,soil_resp,0.797750274075575,2200_west_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,west,3,0.995440800456573,,soil_resp,0.771407418328568,2200_west_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,west,2,0.993268908577416,,soil_resp,0.946056610402979,2200_west_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,west,1,0.986175133355739,,soil_resp,1.21328616299734,2200_west_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,east,5,0.99266881056783,,soil_resp,1.5385719826595,2200_east_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,east,4,0.992107783077236,,soil_resp,1.55249112883402,2200_east_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,east,3,0.988828354150528,,soil_resp,1.16331317673617,2200_east_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,east,2,0.989071483572376,,soil_resp,1.58224573061639,2200_east_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+2,2200,east,1,0.99086733479898,,soil_resp,1.22202109020394,2200_east_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,west,5,0.988119709717168,,soil_resp,1.05733214509475,2000_west_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,west,4,0.990855788615809,,soil_resp,1.1097788138754,2000_west_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,west,3,0.985802696422689,,soil_resp,1.18130822447782,2000_west_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,west,2,0.99570269725038,,soil_resp,0.656066317062602,2000_west_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,west,1,0.980896213323772,,soil_resp,1.62633022208121,2000_west_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,5,0.971814545486025,,soil_resp,0.361361208348053,2000_east_5,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,4,0.970418530011274,,soil_resp,0.374717697942894,2000_east_4,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,3,0.99016555284304,,soil_resp,0.706402200933725,2000_east_3,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,2,0.980815941112163,,soil_resp,0.667056395093938,2000_east_2,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,1,0.980700826551529,,soil_resp,0.793559573930786,2000_east_1,"Soil Respiration
+(µmol/m²/s)",Carbon,LI-8100
+1,2000,east,1,,,gpp,15.238862890468,2000_east_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,1,,,npp,3.37449272893662,2000_east_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,1,,,cue,0.22143992981572,2000_east_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,east,1,,,transpiration,1.08177227726306,2000_east_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,east,1,,,wue,0.320573302169761,2000_east_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,east,2,,,gpp,6.32722362102911,2000_east_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,2,,,npp,3.62801450156504,2000_east_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,2,,,cue,0.573397546675448,2000_east_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,east,2,,,transpiration,0.28633439927799,2000_east_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,east,2,,,wue,0.0789231683485477,2000_east_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,east,3,,,gpp,7.71900542693446,2000_east_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,3,,,npp,1.82656288243053,2000_east_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,3,,,cue,0.236631895095834,2000_east_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,east,3,,,transpiration,1.95706267799125,2000_east_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,east,3,,,wue,1.07144555318406,2000_east_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,east,4,,,gpp,10.6748634160699,2000_east_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,4,,,npp,5.67532750660919,2000_east_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,4,,,cue,0.531653407205717,2000_east_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,east,4,,,transpiration,1.70070909329462,2000_east_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,east,4,,,wue,0.299667127811401,2000_east_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,east,5,,,gpp,7.62791569868789,2000_east_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,5,,,npp,1.73143534713286,2000_east_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,east,5,,,cue,0.226986691453695,2000_east_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,east,5,,,transpiration,0.82866158201794,2000_east_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,east,5,,,wue,0.478598050680983,2000_east_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,west,1,,,gpp,4.80221246291661,2000_west_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,1,,,npp,2.03297469254385,2000_west_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,1,,,cue,0.423341263686848,2000_west_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,west,1,,,transpiration,1.5919739675036,2000_west_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,west,1,,,wue,0.783076136334768,2000_west_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,west,2,,,transpiration,1.67252259283937,2000_west_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,west,3,,,gpp,3.55675586614159,2000_west_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,3,,,npp,2.25250131875857,2000_west_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,3,,,cue,0.633302201087563,2000_west_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,west,3,,,transpiration,1.10223357345811,2000_west_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,west,3,,,wue,0.489337592958919,2000_west_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,west,4,,,gpp,6.04335847945248,2000_west_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,4,,,npp,3.98971196127968,2000_west_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,4,,,cue,0.660181251012126,2000_west_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,west,4,,,transpiration,0.781184129099295,2000_west_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,west,4,,,wue,0.195799630820651,2000_west_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+1,2000,west,5,,,gpp,7.11160525030431,2000_west_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,5,,,npp,3.84074056796317,2000_west_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+1,2000,west,5,,,cue,0.540066614045939,2000_west_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+1,2000,west,5,,,transpiration,1.18282022082533,2000_west_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+1,2000,west,5,,,wue,0.307966705872198,2000_west_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,east,1,,,gpp,15.0943392228082,2200_east_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,1,,,npp,7.72587927648131,2200_east_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,1,,,cue,0.511839515624982,2200_east_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,east,1,,,transpiration,0.92842041594123,2200_east_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,east,1,,,wue,0.120170194578043,2200_east_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,east,2,,,gpp,20.7854722287433,2200_east_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,2,,,npp,12.7166083668183,2200_east_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,2,,,cue,0.611802716189103,2200_east_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,east,2,,,transpiration,2.55640636163613,2200_east_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,east,2,,,wue,0.201028944817284,2200_east_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,east,3,,,gpp,23.2183254594409,2200_east_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,3,,,npp,15.2486063055969,2200_east_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,3,,,cue,0.656748753575446,2200_east_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,east,3,,,transpiration,3.4956101335182,2200_east_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,east,3,,,wue,0.229241286938805,2200_east_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,east,4,,,gpp,14.7049031444692,2200_east_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,4,,,npp,9.12115369529057,2200_east_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,4,,,cue,0.62027975333664,2200_east_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,east,4,,,transpiration,1.75734338834422,2200_east_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,east,4,,,wue,0.192666788330907,2200_east_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,east,5,,,gpp,4.68623978894682,2200_east_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,5,,,npp,2.7954576347202,2200_east_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,east,5,,,cue,0.596524668096092,2200_east_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,east,5,,,transpiration,0.89409434106924,2200_east_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,east,5,,,wue,0.319838272619263,2200_east_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,west,1,,,gpp,8.08624811697596,2200_west_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,1,,,npp,7.16569560144628,2200_west_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,1,,,cue,0.886158264968755,2200_west_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,west,1,,,transpiration,1.50826544304122,2200_west_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,west,1,,,wue,0.210484163287204,2200_west_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,west,2,,,gpp,10.7470340531455,2200_west_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,2,,,npp,5.96201899775569,2200_west_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,2,,,cue,0.554759477663581,2200_west_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,west,2,,,transpiration,1.29537848974728,2200_west_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,west,2,,,wue,0.217271781628825,2200_west_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,west,3,,,gpp,16.5113060283975,2200_west_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,3,,,npp,6.93076988364981,2200_west_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,3,,,cue,0.419759034913997,2200_west_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,west,3,,,transpiration,1.09794594879541,2200_west_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,west,3,,,wue,0.158416159709117,2200_west_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,west,4,,,gpp,12.2640765280093,2200_west_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,4,,,npp,7.51544593822529,2200_west_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,4,,,cue,0.612801617884652,2200_west_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,west,4,,,transpiration,1.48053354525051,2200_west_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,west,4,,,wue,0.196998761939086,2200_west_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+2,2200,west,5,,,gpp,10.4331668243601,2200_west_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,5,,,npp,5.47243735119923,2200_west_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+2,2200,west,5,,,cue,0.524523133131717,2200_west_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+2,2200,west,5,,,transpiration,1.7015526572503,2200_west_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+2,2200,west,5,,,wue,0.310931409178658,2200_west_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,east,1,,,gpp,25.4925888060088,2400_east_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,1,,,npp,13.7991959610015,2400_east_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,1,,,cue,0.541302261061417,2400_east_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,east,1,,,transpiration,0.2064429413276,2400_east_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,east,1,,,wue,0.0149605050838496,2400_east_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,east,2,,,transpiration,1.09757556153672,2400_east_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,east,3,,,gpp,13.5122243647987,2400_east_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,3,,,npp,2.89864586322699,2400_east_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,3,,,cue,0.214520258468945,2400_east_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,east,3,,,transpiration,1.55838634370332,2400_east_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,east,3,,,wue,0.53762564219156,2400_east_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,east,4,,,gpp,-14.2576440486413,2400_east_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,4,,,npp,-17.8786857589381,2400_east_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,4,,,cue,1.25397195342676,2400_east_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,east,4,,,transpiration,1.59060960049175,2400_east_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,east,4,,,wue,-0.0889668078480854,2400_east_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,east,5,,,gpp,7.49335546290019,2400_east_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,5,,,npp,3.32951202811623,2400_east_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,east,5,,,cue,0.444328584784311,2400_east_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,east,5,,,transpiration,3.76926995952616,2400_east_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,east,5,,,wue,1.13207879343771,2400_east_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,west,1,,,gpp,9.26242981847518,2400_west_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,1,,,npp,8.10605837774189,2400_west_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,1,,,cue,0.875154634000384,2400_west_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,west,1,,,transpiration,1.46084326115322,2400_west_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,west,1,,,wue,0.180216227552036,2400_west_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,west,2,,,gpp,4.89471953286303,2400_west_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,2,,,npp,3.22943033734474,2400_west_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,2,,,cue,0.659778423597598,2400_west_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,west,2,,,transpiration,0.67495755485037,2400_west_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,west,2,,,wue,0.209002048146152,2400_west_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,west,3,,,gpp,5.34137088307407,2400_west_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,3,,,npp,2.61095910895509,2400_west_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,3,,,cue,0.488818164121273,2400_west_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,west,3,,,transpiration,0.801582546975973,2400_west_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,west,3,,,wue,0.307006932520198,2400_west_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,west,4,,,gpp,-1.49854815115915,2400_west_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,4,,,npp,-2.08550365282774,2400_west_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+3,2400,west,4,,,cue,1.39168277723647,2400_west_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+3,2400,west,4,,,transpiration,1.41642437441368,2400_west_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+3,2400,west,4,,,wue,-0.679176165667775,2400_west_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+3,2400,west,5,,,transpiration,1.03809427779048,2400_west_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,1,,,gpp,8.15804186355887,2600_east_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,1,,,npp,4.59451695454762,2600_east_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,1,,,cue,0.563188695447967,2600_east_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,east,1,,,transpiration,1.32212719956802,2600_east_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,1,,,wue,0.287761959014949,2600_east_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,east,2,,,gpp,11.7116960538836,2600_east_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,2,,,npp,2.46091986520681,2600_east_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,2,,,cue,0.210124977107033,2600_east_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,east,2,,,transpiration,-0.14473955251239,2600_east_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,2,,,wue,-0.0588152237538326,2600_east_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,east,3,,,gpp,14.9584210832574,2600_east_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,3,,,npp,4.12352446629484,2600_east_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,3,,,cue,0.275665756655975,2600_east_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,east,3,,,transpiration,1.07022984538919,2600_east_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,3,,,wue,0.259542499174459,2600_east_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,east,4,,,gpp,14.2950253265519,2600_east_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,4,,,npp,2.12164695446269,2600_east_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,4,,,cue,0.148418551628719,2600_east_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,east,4,,,transpiration,1.69594703675037,2600_east_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,4,,,wue,0.799354026919088,2600_east_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,east,5,,,gpp,22.3967769176621,2600_east_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,5,,,npp,3.30718506598895,2600_east_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,east,5,,,cue,0.147663437384194,2600_east_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,east,5,,,transpiration,1.17948728106145,2600_east_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,east,5,,,wue,0.356643870097045,2600_east_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,west,1,,,gpp,3.26122904488992,2600_west_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,1,,,npp,2.74383981715049,2600_west_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,1,,,cue,0.841351459643677,2600_west_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,west,1,,,transpiration,0.347084422242607,2600_west_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,west,1,,,wue,0.126495876352964,2600_west_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,west,2,,,gpp,3.20826953015625,2600_west_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,2,,,npp,2.42716017727842,2600_west_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,2,,,cue,0.756532502791375,2600_west_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,west,2,,,transpiration,0.363863991575839,2600_west_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,west,2,,,wue,0.149913464707484,2600_west_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,west,3,,,gpp,6.23361905057286,2600_west_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,3,,,npp,4.19222195276058,2600_west_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,3,,,cue,0.672518150170778,2600_west_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,west,3,,,transpiration,1.31345621671464,2600_west_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,west,3,,,wue,0.31330789054471,2600_west_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,west,4,,,gpp,10.204695103846,2600_west_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,4,,,npp,5.25294517812609,2600_west_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,4,,,cue,0.514757680133561,2600_west_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,west,4,,,transpiration,0.59367093782949,2600_west_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,west,4,,,wue,0.11301677776909,2600_west_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+4,2600,west,5,,,gpp,7.61273933865077,2600_west_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,5,,,npp,2.57232962148102,2600_west_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+4,2600,west,5,,,cue,0.337898029480794,2600_west_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+4,2600,west,5,,,transpiration,0.78705014272529,2600_west_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+4,2600,west,5,,,wue,0.305967841816535,2600_west_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,east,1,,,gpp,7.5052382736711,2800_east_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,1,,,npp,0.807925037384353,2800_east_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,1,,,cue,0.107648152919889,2800_east_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,east,1,,,transpiration,0.82595036154662,2800_east_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,east,1,,,wue,1.0223106393888,2800_east_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,east,2,,,transpiration,1.46630697040366,2800_east_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,east,3,,,gpp,9.36516297236529,2800_east_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,3,,,npp,0.71036418834664,2800_east_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,3,,,cue,0.0758517700591844,2800_east_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,east,3,,,transpiration,0.47582815004926,2800_east_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,east,3,,,wue,0.669836905991477,2800_east_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,east,4,,,transpiration,0.51661072949134,2800_east_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,east,5,,,gpp,7.51479415782411,2800_east_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,5,,,npp,1.55667667921048,2800_east_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,east,5,,,cue,0.207148279316438,2800_east_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,east,5,,,transpiration,0.76432916468736,2800_east_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,east,5,,,wue,0.491000587915927,2800_east_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,west,1,,,gpp,13.110970937473,2800_west_1,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,1,,,npp,3.21191354047974,2800_west_1,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,1,,,cue,0.244979075599934,2800_west_1,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,west,1,,,transpiration,1.35419066872886,2800_west_1,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,west,1,,,wue,0.421614919474637,2800_west_1,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,west,2,,,gpp,7.75080747105526,2800_west_2,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,2,,,npp,3.61319913841227,2800_west_2,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,2,,,cue,0.466170673430537,2800_west_2,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,west,2,,,transpiration,0.73712112449024,2800_west_2,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,west,2,,,wue,0.204007887817152,2800_west_2,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,west,3,,,gpp,7.11757951022752,2800_west_3,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,3,,,npp,3.04931741851415,2800_west_3,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,3,,,cue,0.428420562655109,2800_west_3,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,west,3,,,transpiration,0.53488580782099,2800_west_3,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,west,3,,,wue,0.175411652645078,2800_west_3,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,west,4,,,gpp,1.86391830522596,2800_west_4,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,4,,,npp,1.36426509964447,2800_west_4,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,4,,,cue,0.731933956450458,2800_west_4,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,west,4,,,transpiration,0.332960892653409,2800_west_4,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,west,4,,,wue,0.244058792341884,2800_west_4,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
+5,2800,west,5,,,gpp,1.90607152199485,2800_west_5,"Gross Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,5,,,npp,1.93019176038879,2800_west_5,"Net Primary Productivity
+(µmol/m²/s)",Carbon,calculated
+5,2800,west,5,,,cue,1.01265442461923,2800_west_5,"Carbon Use Efficiency
+(GPP/NPP)",Carbon,calculated
+5,2800,west,5,,,transpiration,1.64413953412354,2800_west_5,"Transpiration
+(mmol/m²/s)",Water,calculated
+5,2800,west,5,,,wue,0.851801135961936,2800_west_5,"Water Use Efficiency
+(Transpiration/NPP)",Water,calculated
