@@ -4,7 +4,6 @@
 
 # Session Data files
 .RData
-.RDataTmp
 
 # User-specific files
 .Ruserdata
@@ -39,11 +38,20 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
+#data (excludes everything in the folder data)
+raw_data/*
+clean_data/*
+builds/*
 
-# translation temp files
-po/*~
+# you can make exceptions for specific files
+!code/data_dic/data_description.xlsx
 
-# RStudio Connect folder
-rsconnect/
+#figures & output (excludes all figure files)
+*.png
+*.pdf
+*.jpeg
+
+*.csv
+*.xls
+*.xlsx
+outputs/
