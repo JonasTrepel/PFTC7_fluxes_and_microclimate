@@ -1,0 +1,16 @@
+Variable.name,TableID,Description,Units,How.measured
+date_time,flux,Date and time of observation (if known),yyyy-mm-dd hh:mm:ss,defined
+date,flux,Date of observation,yyyy-mm-dd,defined
+unique_location_id,flux,"Concatenated SiteID, elevation, aspect, and PlotID",,defined
+site_id,flux,Site number,,defined
+elevation_m_asl,flux,Site elevation,m asl,defined
+aspect,flux,Transect aspect,,defined
+plot_id,flux,Number of plot on transect,,defined
+day_night,flux,Whether the measurement was performed as part of a daytime or nighttime flux campaign,,defined
+device,flux,What equipment was used to measure the microclimate value,,defined
+flux_type,flux,"Which flux was measured or calculated, including cue (carbon-use efficiency), evap_day (daytime evaporation), evap_night (nighttime evaporation), evapotrans (evapotranspiration), gpp (gross primary productivity), nee (net ecosystem exchange), npp (net primary productivity), resp_day (daytime ecosystem respiration), resp_night (nighttime ecosystem respiration), soil_evap (soil evaporation), soil_resp (soil respiration), transpiration (ecosystem transpiration), wue (water-use efficiency)",,defined
+clean_flux_type,flux,Full name and units of the flux,,defined
+flux_value,flux,Flux readings,µmol/m_/s or GPP/NPP (CUE) or Transpiration/NPP (WUE),recorded
+flux_category,flux,Carbon or water fluxes,,defined
+r_squared,flux,Model fit,,recorded
+flag,flux,Quality flag,,defined

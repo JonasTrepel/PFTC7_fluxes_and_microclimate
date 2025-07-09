@@ -1,0 +1,18 @@
+"","Variable.name","Description","Variable type","Variable range or levels","Units","How.measured"
+"1","date_time","Date and time of observation (if known)","categorical","2023-12-03T11:08:28Z - 2023-12-16T21:00:27Z","yyyy-mm-dd hh:mm:ss","defined"
+"2","date","Date of observation","categorical","2023-12-03 - 2023-12-16","yyyy-mm-dd","defined"
+"3","unique_location_id","Concatenated SiteID, elevation, aspect, and PlotID","categorical","2000_east_1 - 2800_west_5","","defined"
+"4","aspect","Transect aspect","categorical","east - west","","defined"
+"5","site_id","Site number","numeric","1 - 5","","defined"
+"6","elevation_m_asl","Site elevation","numeric","2000 - 2800","m asl","defined"
+"7","plot_id","Number of plot on transect","numeric","1 - 5","","defined"
+"8","day_night","Whether the measurement was performed as part of a daytime or nighttime flux campaign","categorical","day - night","","defined"
+"9","flux_type","Which flux was measured or calculated, including cue (carbon-use efficiency), evap_day (daytime evaporation), evap_night (nighttime evaporation), evapotrans (evapotranspiration), gpp (gross primary productivity), nee (net ecosystem exchange), npp (net primary productivity), resp_day (daytime ecosystem respiration), resp_night (nighttime ecosystem respiration), soil_evap (soil evaporation), soil_resp (soil respiration), transpiration (ecosystem transpiration), wue (water-use efficiency)","categorical","cue - wue","","defined"
+"10","clean_flux_type","Full name and units of the flux","categorical","Carbon Use Efficiency
+(GPP/NPP) - Water Use Efficiency
+(Transpiration/NPP)","","defined"
+"11","flux_value","Flux readings","numeric","-17.879 - 28.546","µmol/m_/s or GPP/NPP (CUE) or Transpiration/NPP (WUE)","recorded"
+"12","flux_category","Carbon or water fluxes","categorical","Carbon - Water","","defined"
+"13","r_squared","Model fit","numeric","0 - 0.999","","recorded"
+"14","device","What equipment was used to measure the microclimate value","categorical","calculated - LI-8100","","defined"
+"15","flag","Quality flag","categorical","manual_flux_time_selection - okay","","defined"

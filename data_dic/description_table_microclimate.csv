@@ -1,0 +1,10 @@
+Variable.name,TableID,Description,Units,How.measured
+date,microclimate,Date of observation,yyyy-mm-dd,defined
+time,microclimate,Time of observation,hh:mm:ss,defined
+site_id,microclimate,Site number,,defined
+elevation_m_asl,microclimate,Site elevation,m asl,defined
+aspect,microclimate,Transect aspect,,defined
+plot_id,microclimate,Number of plot on transect,,defined
+device,microclimate,What equipment was used to measure the microclimate value,,defined
+climate_variable,microclimate,"Microclimate variable including moisture_soil, temperature_air, temperature_ground, temperature_leaf, temperature_near_surface, and temperature_soil",,defined
+value,microclimate,Temperature or moisture reading discarding values later flagged as suspect,"¡C, (m3 water _ m_3 soil) _ 100",recorded

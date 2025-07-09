@@ -1,0 +1,33 @@
+---
+title: "Readme"
+author: "PFTC7 Group 3"
+date: '2025-02-19'
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data dictionnaries
+## CO~2~ fluxes
+
+```{r, echo=FALSE}
+knitr::kable(data_dic_flux)
+```
+
+## Microclimate
+```{r, echo=FALSE}
+knitr::kable(data_dic_microclimate)
+```
+
+# Data quality flags
+| Flag                                     | Replaced flux | Explanation                                                                                                                  | Recommended action | # of CO2/H2O fluxes  |
+|------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------|
+| decreasing_NEE                           | -             | NEE decreased during the flux measurement (often followed by a redo)                                                         | keep               | 4/0                  |
+| discard_this_keep_other_reading          | NA            | The less reliable of a pair of readings (usually with a redo)                                                                | discard            | 6/22                 |
+| high_aic_discard_this_keep_other_reading | NA            | The higher AIC value of a flux that was split into multiple pieces by the break points function.                             | discard            | 16/4                 |
+| increasing_ER                            | NA            | ER increased during the flux measurement (often followed by a redo                                                           | discard            | 2/0                  |
+| manual_flux_time_selection               | –             | The break points function failed to select the most biologically useful portion of the flux. A new time was manually chosen. | keep               | 6/34                 |
+| okay                                     | –             | –                                                                                                                            | keep               | 140/114              |
+| suspicious                               | NA            | The changes over time do not have a reasonable explanation.                                                                  | discard            | 1/4                  |
