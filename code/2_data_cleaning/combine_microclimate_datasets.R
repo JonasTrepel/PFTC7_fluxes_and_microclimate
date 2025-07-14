@@ -139,5 +139,25 @@ microclimate <- read.csv("raw_data/flir_values.csv") |>
            climate_variable, value, device, flag_all)
 
 
-write.csv(microclimate |> drop_na(value), "clean_data/xi_PFTC7_clean_microclimate_2023.csv",
+microclimate_gradient <- microclimate |> 
+  mutate(date_time = ymd_hms(paste(date, time))) |>
+  select(date_time, aspect:flag_all) |>
+  drop_na(value) |>
+  filter(site_id != 6)
+
+write.csv(microclimate_gradient, "clean_data/xi_PFTC7_clean_elevationgradient_microclimate_2023.csv",
+          row.names = FALSE)
+
+microclimate_experiment <- microclimate |> 
+    drop_na(value) |> 
+  filter(site_id == 6) |>
+  mutate(
+    date_time = case_when(
+      !is.na(time) ~ ymd_hms(paste(date, time)),
+      TRUE ~ ymd(date)
+    )
+  ) |>
+  select(date_time, aspect:flag_all)
+
+write.csv(microclimate_experiment, "clean_data/xi_PFTC7_clean_experiment_microclimate_2023.csv",
           row.names = FALSE)
