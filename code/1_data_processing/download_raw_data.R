@@ -261,7 +261,7 @@ get_file(
   # Where do you want the file to go to?
   path = "raw_data/microclimate",
   # Where is the file stored within the OSF repository?
-  remote_path = "raw_data/raw_microclimate_data/Tomst_data")
+  remote_path = "raw_data/xi_raw_microclimate/Tomst_data")
 
 # Unzip data
 unzip(
@@ -282,7 +282,7 @@ get_file(
   # Where do you want the file to go to?
   path = "raw_data/microclimate",
   # Where is the file stored within the OSF repository?
-  remote_path = "raw_data/raw_microclimate_data/Tomst_data/RangeX")
+  remote_path = "raw_data/xi_raw_microclimate/Tomst_data/RangeX")
 
 # Unzip data
 unzip(
@@ -303,7 +303,7 @@ get_file(
   # Where do you want the file to go to?
   path = "raw_data/microclimate",
   # Where is the file stored within the OSF repository?
-  remote_path = "raw_data/raw_microclimate_data/Tomst_data")
+  remote_path = "raw_data/xi_raw_microclimate/Tomst_data")
 
 ## Tomst RangeX metadata ----
 get_file(
@@ -314,7 +314,7 @@ get_file(
   # Where do you want the file to go to?
   path = "raw_data/microclimate",
   # Where is the file stored within the OSF repository?
-  remote_path = "raw_data/raw_microclimate_data/Tomst_data")
+  remote_path = "raw_data/xi_raw_microclimate/Tomst_data/RangeX")
 
 # FLIR data ----
 get_file(

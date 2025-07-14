@@ -30,7 +30,7 @@ d1 <- read_tomst_data(f, tzone = "Etc/GMT-2") %>%
 
 # Join Tomst data and metadata
 d <- left_join(ids, d1) %>%
-  mutate(moist_vol = cal_funNA(moist)) |> # transform raw moisture counts to volumetric moisture content
+  mutate(moist_vol = cal_fun4(moist)) |> # transform raw moisture counts to volumetric moisture content
   dplyr::rename(temp_soil_C = T1, temp_ground_C = T2, temp_air_C = T3) |> #rename temps by location
   # Remove experimental RangeX loggers
   filter(is.na(RangeX_treatment) | RangeX_treatment %in% c("VN", "VNW")) |>
@@ -61,4 +61,4 @@ d %>%
   summarise(across(c(T1,T2,T3,moist_vol), mean))
 
 # Export clean data ----
-write.csv(d, "outputs/PFTC7_Tomst_Data.csv", row.names = FALSE)
+write.csv(d, "raw_data/PFTC7_Tomst_Data.csv", row.names = FALSE)
