@@ -40,7 +40,8 @@ dt_c <- dt_c_raw %>%
                 unique_location_id,
                 date_time,
                 date,
-                day_night = day.night)
+                day_night = day.night, 
+                file)
 
 ### load water fluxes
 dt_w_raw <- fread("raw_data/dataFragments/licor_et_flagged.csv") %>%
@@ -72,7 +73,8 @@ dt_w <- dt_w_raw %>%
                 unique_location_id,
                 date_time,
                 date,
-                day_night = day.night)
+                day_night = day.night, 
+                file)
 
 ### load soil resp
 
@@ -95,7 +97,8 @@ dt_sr <- dt_sr_raw %>%
                 unique_location_id,
                 date,
                 date_time,
-                day_night)
+                day_night) %>% 
+  mutate(file = NA)
 
 ### calculate additional metrics
 
@@ -121,7 +124,8 @@ dt_calc <- rbind(dt_c,
                 date, date_time, day_night,
                 gpp, npp, cue, transpiration, wue) %>%
   pivot_longer(cols = c("gpp", "npp", "cue", "transpiration", "wue"),
-               names_to = "flux_type", values_to = "flux_value")
+               names_to = "flux_type", values_to = "flux_value") %>% 
+  mutate(file = NA)
 
 ### combine all
 
@@ -157,4 +161,7 @@ summary(dt_comb)
 table(dt_comb$flux_type)
 
 
-fwrite(dt_comb, "clean_data/x_PFTC7_clean_ecosystem_fluxes_2023.csv")
+fwrite(dt_comb %>% 
+         dplyr::select(-file), "clean_data/x_PFTC7_clean_ecosystem_fluxes_2023.csv")
+
+fwrite(dt_comb, "clean_data/x_PFTC7_clean_ecosystem_fluxes_2023_with_file.csv")

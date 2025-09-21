@@ -7,7 +7,7 @@ library(data.table)
 # Read in all the ambient files ----
 # Remember to fix the file names if you've just downloaded from OSF
 source("code/functions/fix_file_names.R")
-source("code/functions/flux_calc_own.R")
+source("code/functions/test_flux_files.R")
 fix_file_names(path = "raw_data/LI7500/")
 
 list.files("raw_data/LI7500/", recursive = TRUE)
